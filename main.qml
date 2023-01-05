@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Controls.Material
+import GameState
 
 ApplicationWindow {
     width: 640
@@ -10,11 +11,16 @@ ApplicationWindow {
     title: qsTr("Word Guessing Game")
     Material.theme: Material.Dark
 
+    GameState {
+        id: gameState
+    }
+
     ColumnLayout {
         anchors.centerIn: parent
         spacing: 50
 
         Label {
+            id: lblGamePrompt
             anchors.horizontalCenter: parent.horizontalCenter
             text: qsTr("Can You Guess The Word?")
             font.pointSize: 18
@@ -70,17 +76,27 @@ ApplicationWindow {
             ColumnLayout {
 
                 TextField {
+                    id: txtWordGuess
                     placeholderText: "Word Guess"
                 }
 
                 Label {
-                    text: "remaining: 1"
+                    id: lblWordGuessRemaining
+                    text: "remaining: " + gameState.getWordGuesses()
                 }
 
             }
 
             Button {
                 text: "Guess Word"
+                onClicked: {
+                    const correct = gameState.makeWordGuess(txtWordGuess.text)
+                    if (!correct) {
+                        lblWordGuessRemaining.text = "remaining: " + gameState.getWordGuesses()
+                    } else {
+                        lblGamePrompt.text = qsTr("You Win!")
+                    }
+                }
             }
 
         }
