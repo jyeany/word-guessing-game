@@ -74,7 +74,6 @@ ApplicationWindow {
                 }
 
                 Label {
-                    anchors.verticalCenter: parent.verticalCenter
                     text: "remaining: 1"
                 }
 
