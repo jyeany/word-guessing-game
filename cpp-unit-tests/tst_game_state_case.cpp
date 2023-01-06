@@ -7,13 +7,13 @@
 using namespace testing;
 
 
-TEST(WORD_GUESS_GAME_SUITE, GAME_STATE_CASE)
+TEST(WordGuessGameSuite, FirstCase)
 {
     EXPECT_EQ(1, 1);
     ASSERT_THAT(0, Eq(0));
 }
 
-TEST(WORD_GUESS_GAME_SUITE, INCORRECT_LETTER_CASE)
+TEST(WordGuessGameSuite, IncorrectLetterCase)
 {
     GameState *gameState = new GameState();
     int expLetterGuesses = gameState->getLetterGuesses() - 1;
