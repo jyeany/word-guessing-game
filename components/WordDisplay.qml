@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 
 Row {
-    Layout.alignment: Qt.AlignHCenter
+    anchors.horizontalCenter: parent.horizontalCenter
     spacing: 20
     Rectangle {
         width: 40

@@ -4,7 +4,7 @@ import QtQuick.Layouts
 import QtQuick.Controls.Material
 
 RowLayout {
-    Layout.alignment: Qt.AlignHCenter
+    anchors.horizontalCenter: parent.horizontalCenter
     spacing: 30
 
     ColumnLayout {

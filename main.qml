@@ -17,23 +17,69 @@ ApplicationWindow {
         id: gameState
     }
 
-    ColumnLayout {
-        id: gameBoard
-        anchors.centerIn: parent
-        spacing: 50
+    StackView {
+        id: stack
+        anchors.fill: parent
+        initialItem: greetingView
+    }
+
+    Column {
+        id: greetingView
+        anchors.horizontalCenter: parent.horizontalCenter
+        topPadding: 100
+        spacing: 20
 
         Label {
-            id: lblGamePrompt
-            Layout.alignment: Qt.AlignHCenter
-            text: qsTr("Can You Guess The Word?")
+            anchors.horizontalCenter: parent.horizontalCenter
             font.pointSize: 18
+            text: "Please Choose a Difficulty"
         }
 
-        WordDisplay {}
+        Button {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: "Easy"
+            onClicked: stack.push(gameBoard)
+        }
 
-        LetterGuess {}
+        Button {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: "Medium"
+            onClicked: stack.push(gameBoard)
+        }
 
-        WordGuess {}
+        Button {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: "Hard"
+            onClicked: stack.push(gameBoard)
+        }
+    }
+
+    Component {
+        id: gameBoard
+
+        Column {
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: 25
+            padding: 10
+
+            Button {
+                text: "Back"
+                onClicked: stack.pop()
+            }
+
+            Label {
+                id: lblGamePrompt
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("Can You Guess The Word?")
+                font.pointSize: 18
+            }
+
+            WordDisplay {}
+
+            LetterGuess {}
+
+            WordGuess {}
+        }
     }
 
 }
