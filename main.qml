@@ -24,53 +24,14 @@ ApplicationWindow {
 
         Label {
             id: lblGamePrompt
-            anchors.horizontalCenter: parent.horizontalCenter
+            Layout.alignment: Qt.AlignHCenter
             text: qsTr("Can You Guess The Word?")
             font.pointSize: 18
         }
 
-        Row {
-            anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 30
-            Rectangle {
-                width: 40
-                height: 40
-                color: "teal"
-            }
-            Rectangle {
-                width: 40
-                height: 40
-                color: "teal"
-            }
-            Rectangle {
-                width: 40
-                height: 40
-                color: "teal"
-            }
-        }
+        WordDisplay {}
 
-        RowLayout {
-            anchors.centerIn: parent.horizontalCenter
-            spacing: 30
-
-            ColumnLayout {
-
-                TextField {
-                    placeholderText: "Letter Guess"
-                    maximumLength: 1
-                }
-
-                Label {
-                    text: "remaining: 5"
-                }
-            }
-
-            ColumnLayout {
-                Button {
-                    text: "Guess Letter"
-                }
-            }
-        }
+        LetterGuess {}
 
         WordGuess {}
     }

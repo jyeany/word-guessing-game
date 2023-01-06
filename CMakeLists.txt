@@ -19,7 +19,9 @@ qt_add_qml_module(appword-guess-game
     QML_FILES
         main.qml
         ./components
+        ./components/WordDisplay.qml
         ./components/WordGuess.qml
+        ./components/LetterGuess.qml
 )
 
 set_target_properties(appword-guess-game PROPERTIES
