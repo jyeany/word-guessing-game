@@ -3,7 +3,7 @@ import QtQuick.Layouts
 
 Row {
     Layout.alignment: Qt.AlignHCenter
-    spacing: 30
+    spacing: 20
     Rectangle {
         width: 40
         height: 40
