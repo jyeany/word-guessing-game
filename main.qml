@@ -4,6 +4,8 @@ import QtQuick.Layouts
 import QtQuick.Controls.Material
 import GameState
 
+import "./components"
+
 ApplicationWindow {
     width: 640
     height: 480
@@ -16,6 +18,7 @@ ApplicationWindow {
     }
 
     ColumnLayout {
+        id: gameBoard
         anchors.centerIn: parent
         spacing: 50
 
@@ -69,37 +72,7 @@ ApplicationWindow {
             }
         }
 
-        RowLayout {
-            anchors.centerIn: parent.horizontalCenter
-            spacing: 30
-
-            ColumnLayout {
-
-                TextField {
-                    id: txtWordGuess
-                    placeholderText: "Word Guess"
-                }
-
-                Label {
-                    id: lblWordGuessRemaining
-                    text: "remaining: " + gameState.getWordGuesses()
-                }
-
-            }
-
-            Button {
-                text: "Guess Word"
-                onClicked: {
-                    const correct = gameState.makeWordGuess(txtWordGuess.text)
-                    if (!correct) {
-                        lblWordGuessRemaining.text = "remaining: " + gameState.getWordGuesses()
-                    } else {
-                        lblGamePrompt.text = qsTr("You Win!")
-                    }
-                }
-            }
-
-        }
+        WordGuess {}
     }
 
 }

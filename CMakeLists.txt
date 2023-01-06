@@ -16,7 +16,10 @@ qt_add_executable(appword-guess-game
 qt_add_qml_module(appword-guess-game
     URI word-guess-game
     VERSION 1.0
-    QML_FILES main.qml 
+    QML_FILES
+        main.qml
+        ./components
+        ./components/WordGuess.qml
 )
 
 set_target_properties(appword-guess-game PROPERTIES
