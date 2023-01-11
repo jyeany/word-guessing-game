@@ -4,7 +4,7 @@ project(GAME_STATE_CASE LANGUAGES CXX)
 
 enable_testing()
 
-
+set(CMAKE_PREFIX_PATH /home/jyeany/Qt/6.4.2/gcc_64)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-DGTEST_LANGUAGE_CXX14)
@@ -43,8 +43,8 @@ endif ()
 include_directories(${GTestIncludes})
 
 add_executable(GAME_STATE_CASE
-    ../gamestate.h
-    ../gamestate.cpp
+    ../../src/gamestate.h
+    ../../src/gamestate.cpp
     main.cpp
     tst_game_state_case.cpp
     ${GTestFiles})

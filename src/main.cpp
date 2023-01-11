@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<GameState>("GameState", 1, 0, "GameState");
 
-    const QUrl url(u"qrc:/word-guess-game/main.qml"_qs);
+    const QUrl url(u"qrc:/word-guess-game/src/main.qml"_qs);
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)

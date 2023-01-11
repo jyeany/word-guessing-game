@@ -7,23 +7,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
-add_subdirectory(cpp-unit-tests)
+add_subdirectory(test/cpp-unit-tests)
 
 qt_add_executable(appword-guess-game
-    gamestate.h
-    gamestate.cpp
-    main.cpp
+    src/gamestate.h
+    src/gamestate.cpp
+    src/main.cpp
 )
 
 qt_add_qml_module(appword-guess-game
     URI word-guess-game
     VERSION 1.0
     QML_FILES
-        main.qml
-        ./components
-        ./components/WordDisplay.qml
-        ./components/WordGuess.qml
-        ./components/LetterGuess.qml
+        src/main.qml
+        src/components/WordDisplay.qml
+        src/components/WordGuess.qml
+        src/components/LetterGuess.qml
 )
 
 set_target_properties(appword-guess-game PROPERTIES

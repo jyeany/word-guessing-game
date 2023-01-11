@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
 
-#include "../gamestate.h"
+#include "../../src/gamestate.h"
 
 using namespace testing;
 
