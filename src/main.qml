@@ -36,6 +36,7 @@ ApplicationWindow {
         }
 
         Button {
+            id: easyButton
             anchors.horizontalCenter: parent.horizontalCenter
             text: "Easy"
             onClicked: stack.push(gameBoard)

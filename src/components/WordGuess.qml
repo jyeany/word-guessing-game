@@ -22,6 +22,7 @@ RowLayout {
     }
 
     Button {
+        id: btnGuessWord
         text: "Guess Word"
         onClicked: {
             const correct = gameState.makeWordGuess(txtWordGuess.text)

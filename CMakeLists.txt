@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
 add_subdirectory(test/cpp-unit-tests)
+add_subdirectory(test/qml-unit-tests)
 
 qt_add_executable(appword-guess-game
     src/gamestate.h
