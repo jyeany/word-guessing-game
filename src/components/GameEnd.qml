@@ -14,6 +14,12 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             font.pointSize: 32
             text: gameState.endGameMessage()
+
+            RotationAnimation on rotation {
+                to: 360
+                duration: 1000
+                running: true
+            }
         }
 
         Button {

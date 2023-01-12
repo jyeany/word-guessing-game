@@ -62,7 +62,7 @@ QString GameState::endGameMessage()
     }
     else if (this->m_gameMode == lost)
     {
-        msg = "Game Over";
+        msg = "You Lose!";
     }
     return msg;
 }
