@@ -12,12 +12,14 @@ RowLayout {
     ColumnLayout {
 
         TextField {
+            id: txtLetterGuess
             placeholderText: "Letter Guess"
             maximumLength: 1
         }
 
         Label {
-            text: "remaining: 5"
+            id: lblLetterGuess
+            text: "remaining: " + gameState.getLetterGuesses()
         }
     }
 
@@ -26,19 +28,11 @@ RowLayout {
         Button {
             id: btnGuessLetter
             text: "Guess Letter"
-
-            SignalSpy {
-                id: clickSpy
-                target: btnGuessLetter
-                signalName: "btnGuessLetterClicked"
-            }
-
-            TestCase {
-                name: "Guess Letter Click"
-                function test_click() {
-                    compare(clickSpy.count, 0)
-                    btnGuessLetter.clicked()
-                    compare(clickSpy.count, 1)
+            onClicked: {
+                const found = gameState.makeLetterGuess(txtLetterGuess.text)
+                if (!found) {
+                    lblLetterGuess.text =
+                            "remaining: " + gameState.getLetterGuesses()
                 }
             }
         }
