@@ -19,11 +19,6 @@ void GameState::setChosenWord(QString word)
     this->m_chosenWord = word;
 }
 
-GameMode GameState::getGameMode()
-{
-    return this->m_gameMode;
-}
-
 bool GameState::makeLetterGuess(QChar letter)
 {
     bool found = this->m_chosenWord.contains(letter);
@@ -56,6 +51,35 @@ void GameState::checkGameLoss()
     {
         this->m_gameMode = lost;
     }
+}
+
+QString GameState::endGameMessage()
+{
+    QString msg;
+    if (this->m_gameMode == won)
+    {
+        msg = "You Win!";
+    }
+    else if (this->m_gameMode == lost)
+    {
+        msg = "Game Over";
+    }
+    return msg;
+}
+
+void GameState::resetGame()
+{
+
+}
+
+GameMode GameState::getGameMode()
+{
+    return this->m_gameMode;
+}
+
+void GameState::setGameMode(GameMode gameMode)
+{
+    this->m_gameMode = gameMode;
 }
 
 int GameState::getWordGuesses()

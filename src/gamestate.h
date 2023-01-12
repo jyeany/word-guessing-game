@@ -13,6 +13,8 @@ public:
     Q_INVOKABLE QString getChosenWord();
     Q_INVOKABLE bool makeLetterGuess(QChar letter);
     Q_INVOKABLE bool makeWordGuess(QString guess);
+    Q_INVOKABLE QString endGameMessage();
+    Q_INVOKABLE void resetGame();
     void checkGameLoss();
 
     // Getters
@@ -24,6 +26,7 @@ public:
     void setChosenWord(QString word);
     void setWordGuesses(int guesses);
     void setLetterGuesses(int guesses);
+    void setGameMode(GameMode gameMode);
 
 signals:
 

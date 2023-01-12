@@ -31,8 +31,13 @@ RowLayout {
             onClicked: {
                 const found = gameState.makeLetterGuess(txtLetterGuess.text)
                 if (!found) {
-                    lblLetterGuess.text =
-                            "remaining: " + gameState.getLetterGuesses()
+                    const remaining = gameState.getLetterGuesses()
+                    if (remaining === 0) {
+                        stack.push(gameEndDisplay)
+                    } else {
+                        lblLetterGuess.text =
+                                "remaining: " + gameState.getLetterGuesses()
+                    }
                 }
             }
         }

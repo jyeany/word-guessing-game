@@ -83,4 +83,9 @@ ApplicationWindow {
         }
     }
 
+    Component {
+        id: gameEndDisplay
+        GameEnd {}
+    }
+
 }

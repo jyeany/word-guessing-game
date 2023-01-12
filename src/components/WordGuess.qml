@@ -28,8 +28,12 @@ RowLayout {
             const correct = gameState.makeWordGuess(txtWordGuess.text)
             if (!correct) {
                 lblWordGuessRemaining.text = "remaining: " + gameState.getWordGuesses()
+                const remaining = gameState.getWordGuesses();
+                if (remaining === 0) {
+                    stack.push(gameEndDisplay)
+                }
             } else {
-                lblGamePrompt.text = qsTr("You Win!")
+                stack.push(gameEndDisplay)
             }
         }
     }

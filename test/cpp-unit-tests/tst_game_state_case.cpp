@@ -47,3 +47,11 @@ TEST(WordGuessGameSuite, LossByWordGuesses)
     gameState->checkGameLoss();
     ASSERT_EQ(lost, gameState->getGameMode());
 }
+
+TEST(LetterGuessGameSuite, WonEndMessage)
+{
+    GameState *gameState = new GameState();
+    gameState->setGameMode(won);
+    QString msg = gameState->endGameMessage();
+    ASSERT_EQ(msg, "You Win!");
+}
