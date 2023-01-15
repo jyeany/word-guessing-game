@@ -50,9 +50,11 @@ ApplicationWindow {
 
             WordDisplay {}
 
+            WordGuess {}
+
             LetterGuess {}
 
-            WordGuess {}
+            GuessedLetters {}
         }
     }
 

@@ -29,6 +29,7 @@ qt_add_qml_module(appword-guess-game
         src/components/LetterGuess.qml
         src/components/GameEnd.qml
         src/components/GreetingView.qml
+        src/components/GuessedLetters.qml
 )
 
 set_target_properties(appword-guess-game PROPERTIES

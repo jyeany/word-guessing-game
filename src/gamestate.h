@@ -20,6 +20,7 @@ public:
     // Getters
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
+    Q_INVOKABLE QList<QChar> getGuessedLetters();
     GameMode getGameMode();
 
     // Setters
@@ -29,10 +30,12 @@ public:
     void setGameMode(GameMode gameMode);
 
 signals:
+    void letterGuessesUpdated();
 
 private:
     QString m_chosenWord;
     GameMode m_gameMode;
+    QList<QChar> m_guessedLetters;
     int m_letterGuesses;
     int m_wordGuesses;
 };

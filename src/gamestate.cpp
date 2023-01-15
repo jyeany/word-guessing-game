@@ -9,23 +9,19 @@ GameState::GameState(QObject *parent)
     this->m_wordGuesses = 2;
 }
 
-QString GameState::getChosenWord()
-{
-    return this->m_chosenWord;
-}
-
-void GameState::setChosenWord(QString word)
-{
-    this->m_chosenWord = word;
-}
-
 bool GameState::makeLetterGuess(QChar letter)
 {
     bool found = this->m_chosenWord.contains(letter);
     if (!found)
     {
+        this->m_guessedLetters.append(letter);
         this->m_letterGuesses--;
         checkGameLoss();
+    }
+
+    if (this->m_gameMode == in_progress)
+    {
+        emit letterGuessesUpdated();
     }
     return found;
 }
@@ -70,6 +66,21 @@ QString GameState::endGameMessage()
 void GameState::resetGame()
 {
 
+}
+
+QList<QChar> GameState::getGuessedLetters()
+{
+    return this->m_guessedLetters;
+}
+
+QString GameState::getChosenWord()
+{
+    return this->m_chosenWord;
+}
+
+void GameState::setChosenWord(QString word)
+{
+    this->m_chosenWord = word;
 }
 
 GameMode GameState::getGameMode()
