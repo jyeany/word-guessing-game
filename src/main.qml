@@ -32,7 +32,6 @@ ApplicationWindow {
         id: gameBoard
 
         Column {
-            anchors.horizontalCenter: parent.horizontalCenter
             spacing: 25
             padding: 10
 
