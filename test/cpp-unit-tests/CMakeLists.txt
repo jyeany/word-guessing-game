@@ -1,10 +1,17 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(GAME_STATE_CASE LANGUAGES CXX)
+project(WordGuessUnitTests LANGUAGES CXX)
 
 enable_testing()
 
-set(CMAKE_PREFIX_PATH /home/jyeany/Qt/6.4.2/gcc_64)
+if (UNIX)
+    set(CMAKE_PREFIX_PATH "/home/jyeany/Qt/6.4.2/gcc_64")
+    set(GOOGLETEST_DIR "/home/jyeany/Development/googletest")
+elseif (MSVC)
+    set(CMAKE_PREFIX_PATH "C:/Qt/6.4.1/msvc2019_64")
+    set(GOOGLETEST_DIR "C:/Users/jyean/DevTools/GoogleTest/googletest")
+endif ()
+
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-DGTEST_LANGUAGE_CXX14)
@@ -12,14 +19,6 @@ add_definitions(-DGTEST_LANGUAGE_CXX14)
 find_package(Threads REQUIRED)
 find_package(Qt6 6.2 COMPONENTS Quick Core REQUIRED)
 
-if ($ENV{GOOGLETEST_DIR})
-    set(GOOGLETEST_DIR $ENV{GOOGLETEST_DIR})
-else ()
-    if (NOT "/home/jyeany/Development/googletest" STREQUAL "")
-        message(WARNING "Using googletest src dir specified at Qt Creator wizard")
-    endif ()
-    set(GOOGLETEST_DIR "/home/jyeany/Development/googletest")
-endif ()
 if (EXISTS ${GOOGLETEST_DIR})
     set(GTestSrc ${GOOGLETEST_DIR}/googletest)
     set(GMockSrc ${GOOGLETEST_DIR}/googlemock)
@@ -42,14 +41,13 @@ endif ()
 
 include_directories(${GTestIncludes})
 
-add_executable(GAME_STATE_CASE
+add_executable(WordGuessUnitTests
     ../../src/gamestate.h
     ../../src/gamestate.cpp
     main.cpp
     tst_game_state_case.cpp
     ${GTestFiles})
-add_test(NAME GAME_STATE_CASE COMMAND GAME_STATE_CASE)
+add_test(NAME WordGuessUnitTests COMMAND WordGuessUnitTests)
 
-target_link_libraries(GAME_STATE_CASE
+target_link_libraries(WordGuessUnitTests
     PRIVATE Threads::Threads Qt6::Quick Qt6::Core)
-
