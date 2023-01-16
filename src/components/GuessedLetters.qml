@@ -15,6 +15,7 @@ RowLayout {
         Label {
             id: lblGuessedLetters
             font.pointSize: 14
+            color: "yellow"
             text: gameState.getGuessedLetters()
         }
     }

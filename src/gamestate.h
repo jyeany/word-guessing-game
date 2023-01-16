@@ -20,7 +20,7 @@ public:
     // Getters
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
-    Q_INVOKABLE QList<QChar> getGuessedLetters();
+    Q_INVOKABLE QString getGuessedLetters();
     GameMode getGameMode();
 
     // Setters

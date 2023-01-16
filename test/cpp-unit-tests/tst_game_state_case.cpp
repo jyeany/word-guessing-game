@@ -55,3 +55,16 @@ TEST(LetterGuessGameSuite, WonEndMessage)
     QString msg = gameState->endGameMessage();
     ASSERT_EQ(msg, "You Win!");
 }
+
+TEST(LetterGuessGameSuite, GuessedLetterFormat)
+{
+    GameState *gameState = new GameState();
+    gameState->setGameMode(in_progress);
+    gameState->setChosenWord("HAT");
+    gameState->makeLetterGuess('G');
+    gameState->makeLetterGuess('B');
+    gameState->makeLetterGuess('Q');
+    QString expected = "G B Q ";
+    QString result = gameState->getGuessedLetters();
+    ASSERT_TRUE(result == expected);
+}

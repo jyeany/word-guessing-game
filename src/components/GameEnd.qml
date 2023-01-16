@@ -8,10 +8,11 @@ Item {
     anchors.fill: parent
 
     ColumnLayout {
-        anchors.centerIn: parent
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
 
         Label {
-            anchors.horizontalCenter: parent.horizontalCenter
+            Layout.alignment: Qt.AlignHCenter
             font.pointSize: 32
             text: gameState.endGameMessage()
 
@@ -23,7 +24,7 @@ Item {
         }
 
         Button {
-            anchors.horizontalCenter: parent.horizontalCenter
+            Layout.alignment: Qt.AlignHCenter
             text: "Play Again"
             onClicked: {
                 stack.clear()

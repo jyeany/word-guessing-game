@@ -68,9 +68,16 @@ void GameState::resetGame()
 
 }
 
-QList<QChar> GameState::getGuessedLetters()
+QString GameState::getGuessedLetters()
 {
-    return this->m_guessedLetters;
+    QList<QChar>::iterator c;
+    QString result = "";
+    for (c = this->m_guessedLetters.begin(); c != this->m_guessedLetters.end(); ++c)
+    {
+
+        result = result + c->toUpper() + " ";
+    }
+    return result;
 }
 
 QString GameState::getChosenWord()
