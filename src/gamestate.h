@@ -10,7 +10,6 @@ class GameState : public QObject
     Q_OBJECT
 public:
     explicit GameState(QObject *parent = nullptr);
-    Q_INVOKABLE QString getChosenWord();
     Q_INVOKABLE bool makeLetterGuess(QChar letter);
     Q_INVOKABLE bool makeWordGuess(QString guess);
     Q_INVOKABLE QString endGameMessage();
@@ -18,6 +17,8 @@ public:
     void checkGameLoss();
 
     // Getters
+    Q_INVOKABLE QString getChosenWord();
+    Q_INVOKABLE QList<QChar> getChosenLetters();
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
     Q_INVOKABLE QString getGuessedLetters();
@@ -34,6 +35,7 @@ signals:
 
 private:
     QString m_chosenWord;
+    QList<QChar> m_chosenLetters;
     GameMode m_gameMode;
     QList<QChar> m_guessedLetters;
     int m_letterGuesses;

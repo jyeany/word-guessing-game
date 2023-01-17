@@ -3,7 +3,7 @@
 GameState::GameState(QObject *parent)
     : QObject{parent}
 {
-    this->m_chosenWord = "Cat";
+    this->m_chosenWord = "ORANGE";
     this->m_gameMode = in_progress;
     this->m_letterGuesses = 5;
     this->m_wordGuesses = 2;
@@ -88,6 +88,16 @@ QString GameState::getChosenWord()
 void GameState::setChosenWord(QString word)
 {
     this->m_chosenWord = word;
+}
+
+QList<QChar> GameState::getChosenLetters()
+{
+    QList<QChar> result;
+    for (int i = 0; i < this->m_chosenWord.length(); ++i)
+    {
+        result.append(this->m_chosenWord[i]);
+    }
+    return result;
 }
 
 GameMode GameState::getGameMode()
