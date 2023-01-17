@@ -19,8 +19,7 @@ Row {
                 anchors.centerIn: parent
                 font.pointSize: 16
                 text: modelData
-                visible: gameState.hasFoundLetter(modelData)
-                objectName: "lblLetter" + index
+                visible: false
             }
         }
     }
