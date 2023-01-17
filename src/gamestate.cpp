@@ -11,18 +11,30 @@ GameState::GameState(QObject *parent)
 
 bool GameState::makeLetterGuess(QChar letter)
 {
-    bool found = this->m_chosenWord.contains(letter);
+    bool found = this->m_chosenWord
+            .toUpper()
+            .contains(letter.toUpper());
     if (!found)
     {
         this->m_guessedLetters.append(letter);
         this->m_letterGuesses--;
         checkGameLoss();
     }
+    else
+    {
+        this->m_foundLetters.append(letter);
+    }
 
     if (this->m_gameMode == in_progress)
     {
         emit letterGuessesUpdated();
     }
+    return found;
+}
+
+bool GameState::hasFoundLetter(QChar letter)
+{
+    bool found = this->m_foundLetters.contains(letter);
     return found;
 }
 
