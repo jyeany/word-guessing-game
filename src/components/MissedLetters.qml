@@ -8,7 +8,7 @@ RowLayout {
 
     ColumnLayout {
         Label {
-            text: "Guessed Letters"
+            text: "Missed Letters"
             font.pointSize: 18
         }
 

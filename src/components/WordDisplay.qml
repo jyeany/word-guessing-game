@@ -27,8 +27,12 @@ Row {
     Connections {
         target: gameState
         function onLetterGuessesUpdated() {
-            // TODO: add current letter guess to get indices
-            letterRepeater.itemAt(0).children[0].visible = true
+            const indices = gameState.currentLetterIndices()
+            indices.forEach(i =>
+                        letterRepeater
+                            .itemAt(i)
+                            .children[0]
+                            .visible = true)
         }
     }
 }

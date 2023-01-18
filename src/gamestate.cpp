@@ -11,9 +11,9 @@ GameState::GameState(QObject *parent)
 
 bool GameState::makeLetterGuess(QChar letter)
 {
+    this->m_currentLetterGuess = letter.toUpper();
     bool found = this->m_chosenWord
-            .toUpper()
-            .contains(letter.toUpper());
+            .contains(letter, Qt::CaseInsensitive);
     if (!found)
     {
         this->m_guessedLetters.append(letter);
@@ -30,6 +30,23 @@ bool GameState::makeLetterGuess(QChar letter)
         emit letterGuessesUpdated();
     }
     return found;
+}
+
+QList<int> GameState::currentLetterIndices()
+{
+    QList<QChar> chosenLetters = getChosenLetters();
+    QList<int> indices;
+    QList<QChar>::iterator c;
+    int i = 0;
+    for (c = chosenLetters.begin(); c != chosenLetters.end(); ++c)
+    {
+        if (*c == this->m_currentLetterGuess)
+        {
+            indices.append(i);
+        }
+        ++i;
+    }
+    return indices;
 }
 
 bool GameState::hasFoundLetter(QChar letter)
