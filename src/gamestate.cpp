@@ -11,18 +11,47 @@ GameState::GameState(QObject *parent)
 
 bool GameState::makeLetterGuess(QChar letter)
 {
-    bool found = this->m_chosenWord.contains(letter);
+    this->m_currentLetterGuess = letter.toUpper();
+    bool found = this->m_chosenWord
+            .contains(letter, Qt::CaseInsensitive);
     if (!found)
     {
         this->m_guessedLetters.append(letter);
         this->m_letterGuesses--;
         checkGameLoss();
     }
+    else
+    {
+        this->m_foundLetters.append(letter);
+    }
 
     if (this->m_gameMode == in_progress)
     {
         emit letterGuessesUpdated();
     }
+    return found;
+}
+
+QList<int> GameState::currentLetterIndices()
+{
+    QList<QChar> chosenLetters = getChosenLetters();
+    QList<int> indices;
+    QList<QChar>::iterator c;
+    int i = 0;
+    for (c = chosenLetters.begin(); c != chosenLetters.end(); ++c)
+    {
+        if (*c == this->m_currentLetterGuess)
+        {
+            indices.append(i);
+        }
+        ++i;
+    }
+    return indices;
+}
+
+bool GameState::hasFoundLetter(QChar letter)
+{
+    bool found = this->m_foundLetters.contains(letter);
     return found;
 }
 

@@ -53,7 +53,7 @@ ApplicationWindow {
 
             LetterGuess {}
 
-            GuessedLetters {}
+            MissedLetters {}
         }
     }
 
