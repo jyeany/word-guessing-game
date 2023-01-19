@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Controls.Material
-import GameState
+import GameManager
 
 import "./components"
 
@@ -13,7 +13,7 @@ ApplicationWindow {
     title: qsTr("Word Guessing Game")
     Material.theme: Material.Dark
 
-    GameState {
+    GameManager {
         id: gameState
     }
 

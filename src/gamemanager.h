@@ -1,15 +1,15 @@
-#ifndef GAMESTATE_H
-#define GAMESTATE_H
+#ifndef GAMEMANAGER_H
+#define GAMEMANAGER_H
 
 #include <QObject>
 
 enum GameMode {won, lost, in_progress};
 
-class GameState : public QObject
+class GameManager : public QObject
 {
     Q_OBJECT
 public:
-    explicit GameState(QObject *parent = nullptr);
+    explicit GameManager(QObject *parent = nullptr);
     Q_INVOKABLE bool makeLetterGuess(QChar letter);
     Q_INVOKABLE bool makeWordGuess(QString guess);
     Q_INVOKABLE QString endGameMessage();
@@ -47,4 +47,4 @@ private:
     int m_wordGuesses;
 };
 
-#endif // GAMESTATE_H
+#endif // GAMEMANAGER_H

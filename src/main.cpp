@@ -2,14 +2,14 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
-#include "gamestate.h"
+#include "gamemanager.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    qmlRegisterType<GameState>("GameState", 1, 0, "GameState");
+    qmlRegisterType<GameManager>("GameManager", 1, 0, "GameManager");
 
     const QUrl url(u"qrc:/word-guess-game/src/main.qml"_qs);
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

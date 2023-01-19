@@ -42,8 +42,8 @@ endif ()
 include_directories(${GTestIncludes})
 
 add_executable(WordGuessUnitTests
-    ../../src/gamestate.h
-    ../../src/gamestate.cpp
+    ../../src/gamemanager.h
+    ../../src/gamemanager.cpp
     main.cpp
     tst_game_state_case.cpp
     ${GTestFiles})

@@ -2,103 +2,103 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
 
-#include "../../src/gamestate.h"
+#include "../../src/gamemanager.h"
 
 using namespace testing;
 
 
 TEST(WordGuessGameSuite, IncorrectLetterGuess)
 {    
-    GameState *gameState = new GameState();
-    int expLetterGuesses = gameState->getLetterGuesses() - 1;
-    gameState->makeLetterGuess('Z');
-    ASSERT_EQ(expLetterGuesses, gameState->getLetterGuesses());
+    GameManager *gameManager = new GameManager();
+    int expLetterGuesses = gameManager->getLetterGuesses() - 1;
+    gameManager->makeLetterGuess('Z');
+    ASSERT_EQ(expLetterGuesses, gameManager->getLetterGuesses());
 }
 
 TEST(WordGuessGameSuite, IncorrectWordGuess)
 {
-    GameState *gameState = new GameState();
-    int expWordGuesses = gameState->getWordGuesses() - 1;
-    gameState->makeWordGuess("Bogus");
-    ASSERT_EQ(expWordGuesses, gameState->getWordGuesses());
+    GameManager *gameManager = new GameManager();
+    int expWordGuesses = gameManager->getWordGuesses() - 1;
+    gameManager->makeWordGuess("Bogus");
+    ASSERT_EQ(expWordGuesses, gameManager->getWordGuesses());
 }
 
 TEST(WordGuessGameSuite, CorrectWordGuess)
 {
-    GameState *gameState = new GameState();
+    GameManager *gameManager = new GameManager();
     QString theWord = "Winner";
-    gameState->setChosenWord(theWord);
-    gameState->makeWordGuess(theWord);
-    ASSERT_EQ(won, gameState->getGameMode());
+    gameManager->setChosenWord(theWord);
+    gameManager->makeWordGuess(theWord);
+    ASSERT_EQ(won, gameManager->getGameMode());
 }
 
 TEST(WordGuessGameSuite, LossByLetterGuesses)
 {
-    GameState *gameState = new GameState();
-    gameState->setLetterGuesses(0);
-    gameState->checkGameLoss();
-    ASSERT_EQ(lost, gameState->getGameMode());
+    GameManager *gameManager = new GameManager();
+    gameManager->setLetterGuesses(0);
+    gameManager->checkGameLoss();
+    ASSERT_EQ(lost, gameManager->getGameMode());
 }
 
 TEST(WordGuessGameSuite, LossByWordGuesses)
 {
-    GameState *gameState = new GameState();
-    gameState->setWordGuesses(0);
-    gameState->checkGameLoss();
-    ASSERT_EQ(lost, gameState->getGameMode());
+    GameManager *gameManager = new GameManager();
+    gameManager->setWordGuesses(0);
+    gameManager->checkGameLoss();
+    ASSERT_EQ(lost, gameManager->getGameMode());
 }
 
 TEST(LetterGuessGameSuite, WonEndMessage)
 {
-    GameState *gameState = new GameState();
-    gameState->setGameMode(won);
-    QString msg = gameState->endGameMessage();
+    GameManager *gameManager = new GameManager();
+    gameManager->setGameMode(won);
+    QString msg = gameManager->endGameMessage();
     ASSERT_EQ(msg, "You Win!");
 }
 
 TEST(LetterGuessGameSuite, GuessedLetterFormat)
 {
-    GameState *gameState = new GameState();
-    gameState->setGameMode(in_progress);
-    gameState->setChosenWord("HAT");
-    gameState->makeLetterGuess('G');
-    gameState->makeLetterGuess('B');
-    gameState->makeLetterGuess('Q');
+    GameManager *gameManager = new GameManager();
+    gameManager->setGameMode(in_progress);
+    gameManager->setChosenWord("HAT");
+    gameManager->makeLetterGuess('G');
+    gameManager->makeLetterGuess('B');
+    gameManager->makeLetterGuess('Q');
     QString expected = "G B Q ";
-    QString result = gameState->getGuessedLetters();
+    QString result = gameManager->getGuessedLetters();
     ASSERT_TRUE(result == expected);
 }
 
 TEST(LetterGuessGameSuite, WinByLettersGameInProgress)
 {
-    GameState *gameState = new GameState();
-    gameState->setGameMode(in_progress);
-    gameState->setChosenWord("HAT");
-    gameState->makeLetterGuess('H');
-    const GameMode resultMode = gameState->getGameMode();
+    GameManager *gameManager = new GameManager();
+    gameManager->setGameMode(in_progress);
+    gameManager->setChosenWord("HAT");
+    gameManager->makeLetterGuess('H');
+    const GameMode resultMode = gameManager->getGameMode();
     ASSERT_EQ(resultMode, in_progress);
 }
 
 TEST(LetterGuessGameSuite, WinByLettersGameWon)
 {
-    GameState *gameState = new GameState();
-    gameState->setGameMode(in_progress);
-    gameState->setChosenWord("HAT");
-    gameState->makeLetterGuess('H');
-    gameState->makeLetterGuess('A');
-    gameState->makeLetterGuess('T');
-    const GameMode resultMode = gameState->getGameMode();
+    GameManager *gameManager = new GameManager();
+    gameManager->setGameMode(in_progress);
+    gameManager->setChosenWord("HAT");
+    gameManager->makeLetterGuess('H');
+    gameManager->makeLetterGuess('A');
+    gameManager->makeLetterGuess('T');
+    const GameMode resultMode = gameManager->getGameMode();
     ASSERT_EQ(resultMode, won);
 }
 
 TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
 {
-    GameState *gameState = new GameState();
-    gameState->setGameMode(in_progress);
-    gameState->setChosenWord("HAT");
-    gameState->makeLetterGuess('h');
-    gameState->makeLetterGuess('a');
-    gameState->makeLetterGuess('t');
-    const GameMode resultMode = gameState->getGameMode();
+    GameManager *gameManager = new GameManager();
+    gameManager->setGameMode(in_progress);
+    gameManager->setChosenWord("HAT");
+    gameManager->makeLetterGuess('h');
+    gameManager->makeLetterGuess('a');
+    gameManager->makeLetterGuess('t');
+    const GameMode resultMode = gameManager->getGameMode();
     ASSERT_EQ(resultMode, won);
 }

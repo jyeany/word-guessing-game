@@ -18,8 +18,8 @@ add_subdirectory(test/cpp-unit-tests)
 add_subdirectory(test/qml-unit-tests)
 
 qt_add_executable(appword-guess-game
-    src/gamestate.h
-    src/gamestate.cpp
+    src/gamemanager.h
+    src/gamemanager.cpp
     src/main.cpp
 )
 

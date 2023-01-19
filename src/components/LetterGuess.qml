@@ -41,7 +41,6 @@ RowLayout {
                     }
                 } else {
                     const gameMode = gameState.getGameModeStr()
-                    console.log(gameMode)
                     if (gameMode === "won") {
                         stack.push(gameEndDisplay)
                     }
