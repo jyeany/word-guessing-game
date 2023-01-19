@@ -17,6 +17,7 @@ public:
     Q_INVOKABLE bool hasFoundLetter(QChar letter);
     Q_INVOKABLE QList<int> currentLetterIndices();
     void checkGameLoss();
+    void checkGameWonByLetters();
 
     // Getters
     Q_INVOKABLE QString getChosenWord();
@@ -25,6 +26,7 @@ public:
     Q_INVOKABLE int getLetterGuesses();
     Q_INVOKABLE QString getGuessedLetters();
     GameMode getGameMode();
+    Q_INVOKABLE QString getGameModeStr();
 
     // Setters
     void setChosenWord(QString word);
@@ -37,7 +39,6 @@ signals:
 
 private:
     QString m_chosenWord;
-    QList<QChar> m_chosenLetters;
     QChar m_currentLetterGuess;
     GameMode m_gameMode;
     QList<QChar> m_guessedLetters;

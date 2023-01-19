@@ -15,6 +15,7 @@ RowLayout {
             id: txtLetterGuess
             placeholderText: "Letter Guess"
             maximumLength: 1
+            focus: true
         }
 
         Label {
@@ -38,7 +39,15 @@ RowLayout {
                         lblLetterGuess.text =
                                 "remaining: " + gameState.getLetterGuesses()
                     }
+                } else {
+                    const gameMode = gameState.getGameModeStr()
+                    console.log(gameMode)
+                    if (gameMode === "won") {
+                        stack.push(gameEndDisplay)
+                    }
                 }
+                txtLetterGuess.text = ""
+                txtLetterGuess.focus = true
             }
         }
     }

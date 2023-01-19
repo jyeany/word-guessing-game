@@ -3,7 +3,7 @@
 GameState::GameState(QObject *parent)
     : QObject{parent}
 {
-    this->m_chosenWord = "ORANGE";
+    this->m_chosenWord = "DOG";
     this->m_gameMode = in_progress;
     this->m_letterGuesses = 5;
     this->m_wordGuesses = 2;
@@ -22,7 +22,8 @@ bool GameState::makeLetterGuess(QChar letter)
     }
     else
     {
-        this->m_foundLetters.append(letter);
+        this->m_foundLetters.append(this->m_currentLetterGuess);
+        checkGameWonByLetters();
     }
 
     if (this->m_gameMode == in_progress)
@@ -57,7 +58,7 @@ bool GameState::hasFoundLetter(QChar letter)
 
 bool GameState::makeWordGuess(QString guess)
 {
-    if (this->m_chosenWord == guess)
+    if (this->m_chosenWord == guess.toUpper())
     {
         this->m_gameMode = won;
         return true;
@@ -75,6 +76,30 @@ void GameState::checkGameLoss()
     if (this->m_wordGuesses == 0 || this->m_letterGuesses == 0)
     {
         this->m_gameMode = lost;
+    }
+}
+
+void GameState::checkGameWonByLetters()
+{
+    int wordCount = getChosenLetters().count();
+    int matched = 0;
+    for (int i = 0; i < this->m_foundLetters.count(); ++i)
+    {
+        QChar f = this->m_foundLetters[i];
+        for (int j = 0; j < getChosenLetters().count(); ++j)
+        {
+            QChar c = getChosenLetters()[j];
+            if (f == c)
+            {
+                matched++;
+                break;
+            }
+        }
+    }
+
+    if (matched == wordCount)
+    {
+        this->m_gameMode = won;
     }
 }
 
@@ -116,7 +141,7 @@ QString GameState::getChosenWord()
 
 void GameState::setChosenWord(QString word)
 {
-    this->m_chosenWord = word;
+    this->m_chosenWord = word.toUpper();
 }
 
 QList<QChar> GameState::getChosenLetters()
@@ -127,6 +152,21 @@ QList<QChar> GameState::getChosenLetters()
         result.append(this->m_chosenWord[i]);
     }
     return result;
+}
+
+QString GameState::getGameModeStr()
+{
+    switch (this->m_gameMode)
+    {
+    case lost:
+        return "lost";
+    case won:
+        return "won";
+    case in_progress:
+        return "in_progress";
+    default:
+        return "";
+    }
 }
 
 GameMode GameState::getGameMode()

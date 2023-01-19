@@ -68,3 +68,37 @@ TEST(LetterGuessGameSuite, GuessedLetterFormat)
     QString result = gameState->getGuessedLetters();
     ASSERT_TRUE(result == expected);
 }
+
+TEST(LetterGuessGameSuite, WinByLettersGameInProgress)
+{
+    GameState *gameState = new GameState();
+    gameState->setGameMode(in_progress);
+    gameState->setChosenWord("HAT");
+    gameState->makeLetterGuess('H');
+    const GameMode resultMode = gameState->getGameMode();
+    ASSERT_EQ(resultMode, in_progress);
+}
+
+TEST(LetterGuessGameSuite, WinByLettersGameWon)
+{
+    GameState *gameState = new GameState();
+    gameState->setGameMode(in_progress);
+    gameState->setChosenWord("HAT");
+    gameState->makeLetterGuess('H');
+    gameState->makeLetterGuess('A');
+    gameState->makeLetterGuess('T');
+    const GameMode resultMode = gameState->getGameMode();
+    ASSERT_EQ(resultMode, won);
+}
+
+TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
+{
+    GameState *gameState = new GameState();
+    gameState->setGameMode(in_progress);
+    gameState->setChosenWord("HAT");
+    gameState->makeLetterGuess('h');
+    gameState->makeLetterGuess('a');
+    gameState->makeLetterGuess('t');
+    const GameMode resultMode = gameState->getGameMode();
+    ASSERT_EQ(resultMode, won);
+}

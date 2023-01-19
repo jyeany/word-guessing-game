@@ -49,9 +49,9 @@ ApplicationWindow {
 
             WordDisplay {}
 
-            WordGuess {}
-
             LetterGuess {}
+
+            WordGuess {}
 
             MissedLetters {}
         }
