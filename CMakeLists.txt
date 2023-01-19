@@ -20,6 +20,10 @@ add_subdirectory(test/qml-unit-tests)
 qt_add_executable(appword-guess-game
     src/gamemanager.h
     src/gamemanager.cpp
+    src/gamestate.h
+    src/gamestate.cpp
+    src/gamestatebuilder.h
+    src/gamestatebuilder.cpp
     src/main.cpp
 )
 
