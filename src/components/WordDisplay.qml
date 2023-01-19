@@ -9,7 +9,7 @@ Row {
 
     Repeater {
         id: letterRepeater
-        model: gameState.getChosenLetters()
+        model: gameManager.getChosenLetters()
         Rectangle {
             width: 40
             height: 40
@@ -25,9 +25,9 @@ Row {
     }
 
     Connections {
-        target: gameState
+        target: gameManager
         function onLetterGuessesUpdated() {
-            const indices = gameState.currentLetterIndices()
+            const indices = gameManager.currentLetterIndices()
             indices.forEach(i =>
                         letterRepeater
                             .itemAt(i)

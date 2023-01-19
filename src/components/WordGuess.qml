@@ -16,7 +16,7 @@ RowLayout {
 
         Label {
             id: lblWordGuessRemaining
-            text: "remaining: " + gameState.getWordGuesses()
+            text: "remaining: " + gameManager.getWordGuesses()
         }
 
     }
@@ -25,10 +25,10 @@ RowLayout {
         id: btnGuessWord
         text: "Guess Word"
         onClicked: {
-            const correct = gameState.makeWordGuess(txtWordGuess.text)
+            const correct = gameManager.makeWordGuess(txtWordGuess.text)
             if (!correct) {
-                lblWordGuessRemaining.text = "remaining: " + gameState.getWordGuesses()
-                const remaining = gameState.getWordGuesses();
+                lblWordGuessRemaining.text = "remaining: " + gameManager.getWordGuesses()
+                const remaining = gameManager.getWordGuesses();
                 if (remaining === 0) {
                     stack.push(gameEndDisplay)
                 }

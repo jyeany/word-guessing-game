@@ -14,7 +14,7 @@ ApplicationWindow {
     Material.theme: Material.Dark
 
     GameManager {
-        id: gameState
+        id: gameManager
     }
 
     StackView {

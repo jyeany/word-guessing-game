@@ -14,7 +14,7 @@ Item {
         Label {
             Layout.alignment: Qt.AlignHCenter
             font.pointSize: 32
-            text: gameState.endGameMessage()
+            text: gameManager.endGameMessage()
 
             RotationAnimation on rotation {
                 to: 360

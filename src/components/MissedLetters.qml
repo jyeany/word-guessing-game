@@ -17,14 +17,14 @@ RowLayout {
             id: lblGuessedLetters
             font.pointSize: 14
             color: "yellow"
-            text: gameState.getGuessedLetters()
+            text: gameManager.getGuessedLetters()
         }
     }
 
     Connections {
-        target: gameState
+        target: gameManager
         function onLetterGuessesUpdated() {
-            lblGuessedLetters.text = gameState.getGuessedLetters()
+            lblGuessedLetters.text = gameManager.getGuessedLetters()
         }
     }
 }

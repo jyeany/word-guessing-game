@@ -9,7 +9,7 @@ void Setup::applicationAvailable()
 void Setup::qmlEngineAvailable(QQmlEngine *engine)
 {
     // custom code that needs QQmlEngine, register QML types, add import paths,...
-    // TODO: import GameState here
+    // TODO: import GameManager here
 }
 
 void Setup::cleanupTestCase()

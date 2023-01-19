@@ -8,6 +8,10 @@ Column {
     topPadding: 100
     spacing: 20
 
+    function showGameBoard() {
+        stack.push(gameBoard)
+    }
+
     Label {
         anchors.horizontalCenter: parent.horizontalCenter
         font.pointSize: 18
@@ -18,18 +22,18 @@ Column {
         id: easyButton
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Easy"
-        onClicked: stack.push(gameBoard)
+        onClicked: showGameBoard()
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Medium"
-        onClicked: stack.push(gameBoard)
+        onClicked: showGameBoard()
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Hard"
-        onClicked: stack.push(gameBoard)
+        onClicked: showGameBoard()
     }
 }

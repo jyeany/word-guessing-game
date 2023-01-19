@@ -20,7 +20,7 @@ RowLayout {
 
         Label {
             id: lblLetterGuess
-            text: "remaining: " + gameState.getLetterGuesses()
+            text: "remaining: " + gameManager.getLetterGuesses()
         }
     }
 
@@ -30,17 +30,17 @@ RowLayout {
             id: btnGuessLetter
             text: "Guess Letter"
             onClicked: {
-                const found = gameState.makeLetterGuess(txtLetterGuess.text)
+                const found = gameManager.makeLetterGuess(txtLetterGuess.text)
                 if (!found) {
-                    const remaining = gameState.getLetterGuesses()
+                    const remaining = gameManager.getLetterGuesses()
                     if (remaining === 0) {
                         stack.push(gameEndDisplay)
                     } else {
                         lblLetterGuess.text =
-                                "remaining: " + gameState.getLetterGuesses()
+                                "remaining: " + gameManager.getLetterGuesses()
                     }
                 } else {
-                    const gameMode = gameState.getGameModeStr()
+                    const gameMode = gameManager.getGameModeStr()
                     if (gameMode === "won") {
                         stack.push(gameEndDisplay)
                     }
