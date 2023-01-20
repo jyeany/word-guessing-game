@@ -23,8 +23,8 @@ public:
     void checkGameWonByLetters();
 
     // Getters
-    Q_INVOKABLE QString getChosenWord();
-    Q_INVOKABLE QList<QChar> getChosenLetters();
+    Q_INVOKABLE QString getSolutionWord();
+    Q_INVOKABLE QList<QChar> getSolutionLetters();
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
     Q_INVOKABLE QString getGuessedLetters();
@@ -32,7 +32,7 @@ public:
     Q_INVOKABLE QString getGameModeStr();
 
     // Setters
-    void setChosenWord(QString word);
+    void setSolutionWord(QString word);
     void setWordGuesses(int guesses);
     void setLetterGuesses(int guesses);
     void setGameMode(GameMode gameMode);
@@ -43,13 +43,9 @@ signals:
 private:
     GameStateCreator *gameStateCreator;
     GameState *gameState;
-    QString m_chosenWord;
     QChar m_currentLetterGuess;
     GameMode m_gameMode;
-    QList<QChar> m_guessedLetters;
     QList<QChar> m_foundLetters;
-    int m_letterGuesses;
-    int m_wordGuesses;
 };
 
 #endif // GAMEMANAGER_H

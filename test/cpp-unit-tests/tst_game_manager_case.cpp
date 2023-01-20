@@ -27,7 +27,7 @@ TEST(WordGuessGameSuite, CorrectWordGuess)
 {
     GameManager *gameManager = new GameManager();
     QString theWord = "Winner";
-    gameManager->setChosenWord(theWord);
+    gameManager->setSolutionWord(theWord);
     gameManager->makeWordGuess(theWord);
     ASSERT_EQ(won, gameManager->getGameMode());
 }
@@ -60,7 +60,7 @@ TEST(LetterGuessGameSuite, GuessedLetterFormat)
 {
     GameManager *gameManager = new GameManager();
     gameManager->setGameMode(in_progress);
-    gameManager->setChosenWord("HAT");
+    gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('G');
     gameManager->makeLetterGuess('B');
     gameManager->makeLetterGuess('Q');
@@ -73,7 +73,7 @@ TEST(LetterGuessGameSuite, WinByLettersGameInProgress)
 {
     GameManager *gameManager = new GameManager();
     gameManager->setGameMode(in_progress);
-    gameManager->setChosenWord("HAT");
+    gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('H');
     const GameMode resultMode = gameManager->getGameMode();
     ASSERT_EQ(resultMode, in_progress);
@@ -83,7 +83,7 @@ TEST(LetterGuessGameSuite, WinByLettersGameWon)
 {
     GameManager *gameManager = new GameManager();
     gameManager->setGameMode(in_progress);
-    gameManager->setChosenWord("HAT");
+    gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('H');
     gameManager->makeLetterGuess('A');
     gameManager->makeLetterGuess('T');
@@ -95,7 +95,7 @@ TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
 {
     GameManager *gameManager = new GameManager();
     gameManager->setGameMode(in_progress);
-    gameManager->setChosenWord("HAT");
+    gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('h');
     gameManager->makeLetterGuess('a');
     gameManager->makeLetterGuess('t');

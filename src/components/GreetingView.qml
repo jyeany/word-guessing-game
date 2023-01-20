@@ -23,18 +23,18 @@ Column {
         id: easyButton
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Short (3-5 Letters)"
-        onClicked: showGameBoard()
+        onClicked: showGameBoard("Short")
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Medium (5-8 Letters)"
-        onClicked: showGameBoard()
+        onClicked: showGameBoard("Medium")
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Long (Over 8 Letters)"
-        onClicked: showGameBoard()
+        onClicked: showGameBoard("Long")
     }
 }

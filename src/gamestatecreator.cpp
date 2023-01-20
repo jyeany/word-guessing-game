@@ -23,6 +23,9 @@ GameState* GameStateCreator::createGame(QString wordLength)
 GameState* GameStateCreator::shortGame()
 {
     GameState *shortGame = new GameState();
+    shortGame->setSolutionWord("CAT");
+    shortGame->setNumWordGuesses(3);
+    shortGame->setNumLetterGuesses(10);
     return shortGame;
 }
 

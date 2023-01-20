@@ -5,10 +5,11 @@
 GameManager::GameManager(QObject *parent)
     : QObject{parent}
 {
-    this->m_chosenWord = "DOG";
+//    this->m_chosenWord = "DOG";
+//    this->m_letterGuesses = 5;
+//    this->m_wordGuesses = 2;
     this->m_gameMode = in_progress;
-    this->m_letterGuesses = 5;
-    this->m_wordGuesses = 2;
+    this->gameStateCreator = new GameStateCreator();
 }
 
 // --- End Constructors ---
@@ -24,12 +25,11 @@ void GameManager::createGame(QString wordLength)
 bool GameManager::makeLetterGuess(QChar letter)
 {
     this->m_currentLetterGuess = letter.toUpper();
-    bool found = this->m_chosenWord
-            .contains(letter, Qt::CaseInsensitive);
+    bool found = getSolutionWord().contains(letter, Qt::CaseInsensitive);
     if (!found)
     {
-        this->m_guessedLetters.append(letter);
-        this->m_letterGuesses--;
+        this->gameState->addGuessedLetter(letter);
+        this->gameState->decrementNumLetterGuesses();
         checkGameLoss();
     }
     else
@@ -45,17 +45,28 @@ bool GameManager::makeLetterGuess(QChar letter)
     return found;
 }
 
-// --- End Public ---
-
-
+bool GameManager::makeWordGuess(QString guess)
+{
+    if (getSolutionWord() == guess.toUpper())
+    {
+        this->m_gameMode = won;
+        return true;
+    }
+    else
+    {
+        this->gameState->decrementNumWordGuesses();
+        checkGameLoss();
+        return false;
+    }
+}
 
 QList<int> GameManager::currentLetterIndices()
 {
-    QList<QChar> chosenLetters = getChosenLetters();
+    QList<QChar> solutionLetters = getSolutionLetters();
     QList<int> indices;
     QList<QChar>::iterator c;
     int i = 0;
-    for (c = chosenLetters.begin(); c != chosenLetters.end(); ++c)
+    for (c = solutionLetters.begin(); c != solutionLetters.end(); ++c)
     {
         if (*c == this->m_currentLetterGuess)
         {
@@ -72,24 +83,12 @@ bool GameManager::hasFoundLetter(QChar letter)
     return found;
 }
 
-bool GameManager::makeWordGuess(QString guess)
-{
-    if (this->m_chosenWord == guess.toUpper())
-    {
-        this->m_gameMode = won;
-        return true;
-    }
-    else
-    {
-        this->m_wordGuesses--;
-        checkGameLoss();
-        return false;
-    }
-}
+// --- End Public ---
+
 
 void GameManager::checkGameLoss()
 {
-    if (this->m_wordGuesses == 0 || this->m_letterGuesses == 0)
+    if (getWordGuesses() == 0 || getLetterGuesses() == 0)
     {
         this->m_gameMode = lost;
     }
@@ -97,14 +96,14 @@ void GameManager::checkGameLoss()
 
 void GameManager::checkGameWonByLetters()
 {
-    int wordCount = getChosenLetters().count();
+    int wordCount = getSolutionLetters().count();
     int matched = 0;
     for (int i = 0; i < this->m_foundLetters.count(); ++i)
     {
         QChar f = this->m_foundLetters[i];
-        for (int j = 0; j < getChosenLetters().count(); ++j)
+        for (int j = 0; j < getSolutionLetters().count(); ++j)
         {
-            QChar c = getChosenLetters()[j];
+            QChar c = getSolutionLetters().at(j);
             if (f == c)
             {
                 matched++;
@@ -142,32 +141,28 @@ QString GameManager::getGuessedLetters()
 {
     QList<QChar>::iterator c;
     QString result = "";
-    for (c = this->m_guessedLetters.begin(); c != this->m_guessedLetters.end(); ++c)
+    QList<QChar> guessedLetters = this->gameState->getGuessedLetters();
+    for (c = guessedLetters.begin(); c != guessedLetters.end(); ++c)
     {
-
         result = result + c->toUpper() + " ";
     }
+
     return result;
 }
 
-QString GameManager::getChosenWord()
+QString GameManager::getSolutionWord()
 {
-    return this->m_chosenWord;
+    return this->gameState->getSolutionWord();
 }
 
-void GameManager::setChosenWord(QString word)
+void GameManager::setSolutionWord(QString word)
 {
-    this->m_chosenWord = word.toUpper();
+    this->gameState->setSolutionWord(word.toUpper());
 }
 
-QList<QChar> GameManager::getChosenLetters()
-{
-    QList<QChar> result;
-    for (int i = 0; i < this->m_chosenWord.length(); ++i)
-    {
-        result.append(this->m_chosenWord[i]);
-    }
-    return result;
+QList<QChar> GameManager::getSolutionLetters()
+{   
+    return this->gameState->getSolutionLetters();
 }
 
 QString GameManager::getGameModeStr()
@@ -197,20 +192,20 @@ void GameManager::setGameMode(GameMode gameMode)
 
 int GameManager::getWordGuesses()
 {
-    return this->m_wordGuesses;
+    return this->gameState->getNumWordGuesses();
 }
 
 void GameManager::setWordGuesses(int guesses)
 {
-    this->m_wordGuesses = guesses;
+    this->gameState->setNumWordGuesses(guesses);
 }
 
 int GameManager::getLetterGuesses()
 {
-    return this->m_letterGuesses;
+    return this->gameState->getNumLetterGuesses();
 }
 
 void GameManager::setLetterGuesses(int guesses)
 {
-    this->m_letterGuesses = guesses;
+    this->gameState->setNumLetterGuesses(guesses);
 }

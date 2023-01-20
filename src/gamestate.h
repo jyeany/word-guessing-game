@@ -10,6 +10,11 @@ class GameState
 public:
     GameState();
 
+    // functions
+    int decrementNumLetterGuesses();
+    int decrementNumWordGuesses();
+    void addGuessedLetter(QChar letter);
+
     // getters
     QString getSolutionWord();
     QList<QChar> getSolutionLetters();

@@ -9,7 +9,7 @@ Row {
 
     Repeater {
         id: letterRepeater
-        model: gameManager.getChosenLetters()
+        model: gameManager.getSolutionLetters()
         Rectangle {
             width: 40
             height: 40

@@ -7,6 +7,42 @@ GameState::GameState() {}
 // --- End Constructors ---
 
 
+// ----- Public -----
+
+int GameState::decrementNumLetterGuesses()
+{
+    this->numLetterGuesses = this->numLetterGuesses - 1;
+    return this->numLetterGuesses;
+}
+
+int GameState::decrementNumWordGuesses()
+{
+    this->numWordGuesses = this->numWordGuesses - 1;
+    return this->numWordGuesses;
+}
+
+void GameState::addGuessedLetter(QChar letter)
+{
+    this->guessedLetters.append(letter.toUpper());
+}
+
+// --- End Public ---
+
+
+// ----- Private -----
+
+void GameState::populateSolutionLetters()
+{
+    for (short i = 0; i < this->solutionWord.length(); ++i)
+    {
+        this->solutionLetters.append(this->solutionWord[i]);
+    }
+}
+
+// --- End Private ---
+
+
+
 // ----- Getters -----
 
 QString GameState::getSolutionWord()
@@ -56,16 +92,3 @@ void GameState::setNumWordGuesses(int guesses)
 }
 
 // --- End Setters ---
-
-
-// ----- Private -----
-
-void GameState::populateSolutionLetters()
-{
-    for (short i = 0; i < this->solutionWord.length(); ++i)
-    {
-        this->solutionLetters.append(this->solutionWord[i]);
-    }
-}
-
-// --- End Private ---
