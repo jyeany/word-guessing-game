@@ -29,7 +29,7 @@ TEST(WordGuessGameSuite, CorrectWordGuess)
     QString theWord = "Winner";
     gameManager->setSolutionWord(theWord);
     gameManager->makeWordGuess(theWord);
-    ASSERT_EQ(won, gameManager->getGameMode());
+    ASSERT_EQ(won, gameManager->getGamePhase());
 }
 
 TEST(WordGuessGameSuite, LossByLetterGuesses)
@@ -37,7 +37,7 @@ TEST(WordGuessGameSuite, LossByLetterGuesses)
     GameManager *gameManager = new GameManager();
     gameManager->setLetterGuesses(0);
     gameManager->checkGameLoss();
-    ASSERT_EQ(lost, gameManager->getGameMode());
+    ASSERT_EQ(lost, gameManager->getGamePhase());
 }
 
 TEST(WordGuessGameSuite, LossByWordGuesses)
@@ -45,13 +45,13 @@ TEST(WordGuessGameSuite, LossByWordGuesses)
     GameManager *gameManager = new GameManager();
     gameManager->setWordGuesses(0);
     gameManager->checkGameLoss();
-    ASSERT_EQ(lost, gameManager->getGameMode());
+    ASSERT_EQ(lost, gameManager->getGamePhase());
 }
 
 TEST(LetterGuessGameSuite, WonEndMessage)
 {
     GameManager *gameManager = new GameManager();
-    gameManager->setGameMode(won);
+    gameManager->setGamePhase(won);
     QString msg = gameManager->endGameMessage();
     ASSERT_EQ(msg, "You Win!");
 }
@@ -59,7 +59,7 @@ TEST(LetterGuessGameSuite, WonEndMessage)
 TEST(LetterGuessGameSuite, GuessedLetterFormat)
 {
     GameManager *gameManager = new GameManager();
-    gameManager->setGameMode(in_progress);
+    gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('G');
     gameManager->makeLetterGuess('B');
@@ -72,33 +72,33 @@ TEST(LetterGuessGameSuite, GuessedLetterFormat)
 TEST(LetterGuessGameSuite, WinByLettersGameInProgress)
 {
     GameManager *gameManager = new GameManager();
-    gameManager->setGameMode(in_progress);
+    gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('H');
-    const GameMode resultMode = gameManager->getGameMode();
-    ASSERT_EQ(resultMode, in_progress);
+    const GamePhase resultPhase = gameManager->getGamePhase();
+    ASSERT_EQ(resultPhase, in_progress);
 }
 
 TEST(LetterGuessGameSuite, WinByLettersGameWon)
 {
     GameManager *gameManager = new GameManager();
-    gameManager->setGameMode(in_progress);
+    gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('H');
     gameManager->makeLetterGuess('A');
     gameManager->makeLetterGuess('T');
-    const GameMode resultMode = gameManager->getGameMode();
+    const GamePhase resultMode = gameManager->getGamePhase();
     ASSERT_EQ(resultMode, won);
 }
 
 TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
 {
     GameManager *gameManager = new GameManager();
-    gameManager->setGameMode(in_progress);
+    gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('h');
     gameManager->makeLetterGuess('a');
     gameManager->makeLetterGuess('t');
-    const GameMode resultMode = gameManager->getGameMode();
+    const GamePhase resultMode = gameManager->getGamePhase();
     ASSERT_EQ(resultMode, won);
 }

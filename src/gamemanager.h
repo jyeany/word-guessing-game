@@ -5,8 +5,6 @@
 #include "gamestatecreator.h"
 #include "gamestate.h"
 
-enum GameMode {won, lost, in_progress};
-
 class GameManager : public QObject
 {
     Q_OBJECT
@@ -28,14 +26,14 @@ public:
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
     Q_INVOKABLE QString getGuessedLetters();
-    GameMode getGameMode();
     Q_INVOKABLE QString getGameModeStr();
+    GamePhase getGamePhase();
 
     // Setters
     void setSolutionWord(QString word);
     void setWordGuesses(int guesses);
     void setLetterGuesses(int guesses);
-    void setGameMode(GameMode gameMode);
+    void setGamePhase(GamePhase gamePhase);
 
 signals:
     void letterGuessesUpdated();
@@ -44,7 +42,6 @@ private:
     GameStateCreator *gameStateCreator;
     GameState *gameState;
     QChar m_currentLetterGuess;
-    GameMode m_gameMode;
     QList<QChar> m_foundLetters;
 };
 

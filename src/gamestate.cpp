@@ -45,6 +45,11 @@ void GameState::populateSolutionLetters()
 
 // ----- Getters -----
 
+GamePhase GameState::getGamePhase()
+{
+    return this->gamePhase;
+}
+
 QString GameState::getSolutionWord()
 {
     return this->solutionWord;
@@ -74,6 +79,11 @@ int GameState::getNumWordGuesses()
 
 
 // ----- Setters -----
+
+void GameState::setGamePhase(GamePhase gamePhase)
+{
+    this->gamePhase = gamePhase;
+}
 
 void GameState::setSolutionWord(QString word)
 {

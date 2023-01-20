@@ -5,10 +5,6 @@
 GameManager::GameManager(QObject *parent)
     : QObject{parent}
 {
-//    this->m_chosenWord = "DOG";
-//    this->m_letterGuesses = 5;
-//    this->m_wordGuesses = 2;
-    this->m_gameMode = in_progress;
     this->gameStateCreator = new GameStateCreator();
 }
 
@@ -38,7 +34,7 @@ bool GameManager::makeLetterGuess(QChar letter)
         checkGameWonByLetters();
     }
 
-    if (this->m_gameMode == in_progress)
+    if (this->gameState->getGamePhase() == in_progress)
     {
         emit letterGuessesUpdated();
     }
@@ -49,7 +45,7 @@ bool GameManager::makeWordGuess(QString guess)
 {
     if (getSolutionWord() == guess.toUpper())
     {
-        this->m_gameMode = won;
+        this->gameState->setGamePhase(won);
         return true;
     }
     else
@@ -90,7 +86,7 @@ void GameManager::checkGameLoss()
 {
     if (getWordGuesses() == 0 || getLetterGuesses() == 0)
     {
-        this->m_gameMode = lost;
+        this->gameState->setGamePhase(lost);
     }
 }
 
@@ -114,18 +110,18 @@ void GameManager::checkGameWonByLetters()
 
     if (matched == wordCount)
     {
-        this->m_gameMode = won;
+        this->gameState->setGamePhase(won);
     }
 }
 
 QString GameManager::endGameMessage()
 {
     QString msg;
-    if (this->m_gameMode == won)
+    if (this->gameState->getGamePhase() == won)
     {
         msg = "You Win!";
     }
-    else if (this->m_gameMode == lost)
+    else if (this->gameState->getGamePhase() == lost)
     {
         msg = "You Lose!";
     }
@@ -167,7 +163,7 @@ QList<QChar> GameManager::getSolutionLetters()
 
 QString GameManager::getGameModeStr()
 {
-    switch (this->m_gameMode)
+    switch (this->gameState->getGamePhase())
     {
     case lost:
         return "lost";
@@ -180,14 +176,14 @@ QString GameManager::getGameModeStr()
     }
 }
 
-GameMode GameManager::getGameMode()
+GamePhase GameManager::getGamePhase()
 {
-    return this->m_gameMode;
+    return this->gameState->getGamePhase();
 }
 
-void GameManager::setGameMode(GameMode gameMode)
+void GameManager::setGamePhase(GamePhase gamePhase)
 {
-    this->m_gameMode = gameMode;
+    this->gameState->setGamePhase(gamePhase);
 }
 
 int GameManager::getWordGuesses()
