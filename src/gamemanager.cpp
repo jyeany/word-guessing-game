@@ -1,5 +1,7 @@
 #include "gamemanager.h"
 
+// ----- Constructors -----
+
 GameManager::GameManager(QObject *parent)
     : QObject{parent}
 {
@@ -7,6 +9,16 @@ GameManager::GameManager(QObject *parent)
     this->m_gameMode = in_progress;
     this->m_letterGuesses = 5;
     this->m_wordGuesses = 2;
+}
+
+// --- End Constructors ---
+
+
+// ----- Public -----
+
+void GameManager::createGame(QString wordLength)
+{
+    this->gameState = this->gameStateCreator->createGame(wordLength);
 }
 
 bool GameManager::makeLetterGuess(QChar letter)
@@ -32,6 +44,10 @@ bool GameManager::makeLetterGuess(QChar letter)
     }
     return found;
 }
+
+// --- End Public ---
+
+
 
 QList<int> GameManager::currentLetterIndices()
 {

@@ -8,7 +8,7 @@ class GameStateCreator
 {
 public:
     GameStateCreator();
-    GameState* createGame(QString userChoice);
+    GameState* createGame(QString wordLength);
 
 private:
     GameState* shortGame();

@@ -8,7 +8,8 @@ Column {
     topPadding: 100
     spacing: 20
 
-    function showGameBoard() {
+    function showGameBoard(wordLength) {
+        gameManager.createGame(wordLength)
         stack.push(gameBoard)
     }
 

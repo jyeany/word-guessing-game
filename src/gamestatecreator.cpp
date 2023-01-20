@@ -2,14 +2,14 @@
 
 GameStateCreator::GameStateCreator() {}
 
-GameState* GameStateCreator::createGame(QString userChoice)
+GameState* GameStateCreator::createGame(QString wordLength)
 {
     GameState *gameState;
-    if (userChoice == "Short")
+    if (wordLength == "Short")
     {
         gameState = this->shortGame();
     }
-    else if (userChoice == "Medium")
+    else if (wordLength == "Medium")
     {
         gameState = this->mediumGame();
     }

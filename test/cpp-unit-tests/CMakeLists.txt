@@ -44,8 +44,12 @@ include_directories(${GTestIncludes})
 add_executable(WordGuessUnitTests
     ../../src/gamemanager.h
     ../../src/gamemanager.cpp
+    ../../src/gamestatecreator.h
+    ../../src/gamestatecreator.cpp
+    ../../src/gamestate.h
+    ../../src/gamestate.cpp
     main.cpp
-    tst_game_state_case.cpp
+    tst_game_manager_case.cpp
     ${GTestFiles})
 add_test(NAME WordGuessUnitTests COMMAND WordGuessUnitTests)
 

@@ -13,14 +13,26 @@ public:
     // getters
     QString getSolutionWord();
     QList<QChar> getSolutionLetters();
+    QList<QChar> getGuessedLetters();
     int getNumLetterGuesses();
     int getNumWordGuesses();
 
+    // setters
+    void setSolutionWord(QString word);
+    void setNumLetterGuesses(int guesses);
+    void setNumWordGuesses(int guesses);
+
 private:
-   QString solutionWord;
-   QList<QChar> solutionLetters;
-   int numLetterGuesses;
-   int numWordGuesses;
+
+    // properties
+    QString solutionWord;
+    QList<QChar> solutionLetters;
+    QList<QChar> guessedLetters;
+    int numLetterGuesses;
+    int numWordGuesses;
+
+    // functions
+    void populateSolutionLetters();
 };
 
 #endif // GAMESTATE_H
