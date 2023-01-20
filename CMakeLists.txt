@@ -22,8 +22,8 @@ qt_add_executable(appword-guess-game
     src/gamemanager.cpp
     src/gamestate.h
     src/gamestate.cpp
-    src/gamestatebuilder.h
-    src/gamestatebuilder.cpp
+    src/gamestatecreator.h
+    src/gamestatecreator.cpp
     src/main.cpp
 )
 

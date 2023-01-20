@@ -21,19 +21,19 @@ Column {
     Button {
         id: easyButton
         anchors.horizontalCenter: parent.horizontalCenter
-        text: "Easy"
+        text: "Short (3-5 Letters)"
         onClicked: showGameBoard()
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
-        text: "Medium"
+        text: "Medium (5-8 Letters)"
         onClicked: showGameBoard()
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
-        text: "Hard"
+        text: "Long (Over 8 Letters)"
         onClicked: showGameBoard()
     }
 }
