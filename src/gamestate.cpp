@@ -65,6 +65,11 @@ QList<QChar> GameState::getGuessedLetters()
     return this->guessedLetters;
 }
 
+QChar GameState::getCurrentLetterGuess()
+{
+    return this->currentLetterGuess;
+}
+
 int GameState::getNumLetterGuesses()
 {
     return this->numLetterGuesses;
@@ -99,6 +104,11 @@ void GameState::setNumLetterGuesses(int guesses)
 void GameState::setNumWordGuesses(int guesses)
 {
     this->numWordGuesses = guesses;
+}
+
+void GameState::setCurrentLetterGuess(QChar letter)
+{
+    this->currentLetterGuess = letter.toUpper();
 }
 
 // --- End Setters ---

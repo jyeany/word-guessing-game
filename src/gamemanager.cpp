@@ -20,7 +20,7 @@ void GameManager::createGame(QString wordLength)
 
 bool GameManager::makeLetterGuess(QChar letter)
 {
-    this->m_currentLetterGuess = letter.toUpper();
+    this->gameState->setCurrentLetterGuess(letter);
     bool found = getSolutionWord().contains(letter, Qt::CaseInsensitive);
     if (!found)
     {
@@ -30,7 +30,7 @@ bool GameManager::makeLetterGuess(QChar letter)
     }
     else
     {
-        this->m_foundLetters.append(this->m_currentLetterGuess);
+        this->m_foundLetters.append(this->gameState->getCurrentLetterGuess());
         checkGameWonByLetters();
     }
 
@@ -64,7 +64,7 @@ QList<int> GameManager::currentLetterIndices()
     int i = 0;
     for (c = solutionLetters.begin(); c != solutionLetters.end(); ++c)
     {
-        if (*c == this->m_currentLetterGuess)
+        if (*c == this->gameState->getCurrentLetterGuess())
         {
             indices.append(i);
         }

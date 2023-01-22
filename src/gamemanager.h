@@ -41,7 +41,6 @@ signals:
 private:
     GameStateCreator *gameStateCreator;
     GameState *gameState;
-    QChar m_currentLetterGuess;
     QList<QChar> m_foundLetters;
 };
 

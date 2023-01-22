@@ -22,6 +22,7 @@ public:
     QString getSolutionWord();
     QList<QChar> getSolutionLetters();
     QList<QChar> getGuessedLetters();
+    QChar getCurrentLetterGuess();
     int getNumLetterGuesses();
     int getNumWordGuesses();
 
@@ -30,6 +31,7 @@ public:
     void setSolutionWord(QString word);
     void setNumLetterGuesses(int guesses);
     void setNumWordGuesses(int guesses);
+    void setCurrentLetterGuess(QChar letter);
 
 private:
 
@@ -38,6 +40,7 @@ private:
     QString solutionWord;
     QList<QChar> solutionLetters;
     QList<QChar> guessedLetters;
+    QChar currentLetterGuess;
     int numLetterGuesses;
     int numWordGuesses;
 
