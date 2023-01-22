@@ -30,7 +30,7 @@ bool GameManager::makeLetterGuess(QChar letter)
     }
     else
     {
-        this->m_foundLetters.append(this->gameState->getCurrentLetterGuess());
+        this->gameState->addFoundLetter(this->gameState->getCurrentLetterGuess());
         checkGameWonByLetters();
     }
 
@@ -75,7 +75,7 @@ QList<int> GameManager::currentLetterIndices()
 
 bool GameManager::hasFoundLetter(QChar letter)
 {
-    bool found = this->m_foundLetters.contains(letter);
+    bool found = this->gameState->getFoundLetters().contains(letter);
     return found;
 }
 
@@ -94,9 +94,9 @@ void GameManager::checkGameWonByLetters()
 {
     int wordCount = getSolutionLetters().count();
     int matched = 0;
-    for (int i = 0; i < this->m_foundLetters.count(); ++i)
+    for (int i = 0; i < this->gameState->getFoundLetters().count(); ++i)
     {
-        QChar f = this->m_foundLetters[i];
+        QChar f = this->gameState->getFoundLetters()[i];
         for (int j = 0; j < getSolutionLetters().count(); ++j)
         {
             QChar c = getSolutionLetters().at(j);

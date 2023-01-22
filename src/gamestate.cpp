@@ -26,6 +26,11 @@ void GameState::addGuessedLetter(QChar letter)
     this->guessedLetters.append(letter.toUpper());
 }
 
+void GameState::addFoundLetter(QChar letter)
+{
+    this->foundLetters.append(letter.toUpper());
+}
+
 // --- End Public ---
 
 
@@ -68,6 +73,11 @@ QList<QChar> GameState::getGuessedLetters()
 QChar GameState::getCurrentLetterGuess()
 {
     return this->currentLetterGuess;
+}
+
+QList<QChar> GameState::getFoundLetters()
+{
+    return this->foundLetters;
 }
 
 int GameState::getNumLetterGuesses()

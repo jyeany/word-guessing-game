@@ -16,6 +16,7 @@ public:
     int decrementNumLetterGuesses();
     int decrementNumWordGuesses();
     void addGuessedLetter(QChar letter);
+    void addFoundLetter(QChar letter);
 
     // getters
     GamePhase getGamePhase();
@@ -23,6 +24,7 @@ public:
     QList<QChar> getSolutionLetters();
     QList<QChar> getGuessedLetters();
     QChar getCurrentLetterGuess();
+    QList<QChar> getFoundLetters();
     int getNumLetterGuesses();
     int getNumWordGuesses();
 
@@ -41,6 +43,7 @@ private:
     QList<QChar> solutionLetters;
     QList<QChar> guessedLetters;
     QChar currentLetterGuess;
+    QList<QChar> foundLetters;
     int numLetterGuesses;
     int numWordGuesses;
 

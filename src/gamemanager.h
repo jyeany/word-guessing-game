@@ -41,7 +41,6 @@ signals:
 private:
     GameStateCreator *gameStateCreator;
     GameState *gameState;
-    QList<QChar> m_foundLetters;
 };
 
 #endif // GAMEMANAGER_H
