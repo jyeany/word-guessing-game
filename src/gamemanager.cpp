@@ -22,15 +22,23 @@ bool GameManager::makeLetterGuess(QChar letter)
 {
     this->gameState->setCurrentLetterGuess(letter);
     bool found = getSolutionWord().contains(letter, Qt::CaseInsensitive);
+    bool alreadyGuessed = this->gameState->getFoundLetters()
+            .contains(letter.toUpper());
     if (!found)
     {
         this->gameState->addGuessedLetter(letter);
-        this->gameState->decrementNumLetterGuesses();
+        if (!alreadyGuessed)
+        {
+            this->gameState->decrementNumLetterGuesses();
+        }
         checkGameLoss();
     }
     else
     {
-        this->gameState->addFoundLetter(this->gameState->getCurrentLetterGuess());
+        if (!alreadyGuessed)
+        {
+            this->gameState->addFoundLetter(this->gameState->getCurrentLetterGuess());
+        }
         checkGameWonByLetters();
     }
 
