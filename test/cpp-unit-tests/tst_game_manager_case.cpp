@@ -10,6 +10,7 @@ using namespace testing;
 TEST(WordGuessGameSuite, IncorrectLetterGuess)
 {    
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     int expLetterGuesses = gameManager->getLetterGuesses() - 1;
     gameManager->makeLetterGuess('Z');
     ASSERT_EQ(expLetterGuesses, gameManager->getLetterGuesses());
@@ -18,6 +19,7 @@ TEST(WordGuessGameSuite, IncorrectLetterGuess)
 TEST(WordGuessGameSuite, IncorrectWordGuess)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     int expWordGuesses = gameManager->getWordGuesses() - 1;
     gameManager->makeWordGuess("Bogus");
     ASSERT_EQ(expWordGuesses, gameManager->getWordGuesses());
@@ -26,6 +28,7 @@ TEST(WordGuessGameSuite, IncorrectWordGuess)
 TEST(WordGuessGameSuite, CorrectWordGuess)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     QString theWord = "Winner";
     gameManager->setSolutionWord(theWord);
     gameManager->makeWordGuess(theWord);
@@ -35,6 +38,7 @@ TEST(WordGuessGameSuite, CorrectWordGuess)
 TEST(WordGuessGameSuite, LossByLetterGuesses)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setLetterGuesses(0);
     gameManager->checkGameLoss();
     ASSERT_EQ(lost, gameManager->getGamePhase());
@@ -43,6 +47,7 @@ TEST(WordGuessGameSuite, LossByLetterGuesses)
 TEST(WordGuessGameSuite, LossByWordGuesses)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setWordGuesses(0);
     gameManager->checkGameLoss();
     ASSERT_EQ(lost, gameManager->getGamePhase());
@@ -51,6 +56,7 @@ TEST(WordGuessGameSuite, LossByWordGuesses)
 TEST(LetterGuessGameSuite, WonEndMessage)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setGamePhase(won);
     QString msg = gameManager->endGameMessage();
     ASSERT_EQ(msg, "You Win!");
@@ -59,6 +65,7 @@ TEST(LetterGuessGameSuite, WonEndMessage)
 TEST(LetterGuessGameSuite, GuessedLetterFormat)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('G');
@@ -72,6 +79,7 @@ TEST(LetterGuessGameSuite, GuessedLetterFormat)
 TEST(LetterGuessGameSuite, WinByLettersGameInProgress)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('H');
@@ -82,6 +90,7 @@ TEST(LetterGuessGameSuite, WinByLettersGameInProgress)
 TEST(LetterGuessGameSuite, WinByLettersGameWon)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('H');
@@ -94,6 +103,7 @@ TEST(LetterGuessGameSuite, WinByLettersGameWon)
 TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
 {
     GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
     gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('h');
@@ -101,4 +111,17 @@ TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
     gameManager->makeLetterGuess('t');
     const GamePhase resultMode = gameManager->getGamePhase();
     ASSERT_EQ(resultMode, won);
+}
+
+TEST(LetterGuessGameSuite, SameLetterGuessMiss)
+{
+    GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
+    gameManager->setGamePhase(in_progress);
+    gameManager->setSolutionWord("BAT");
+    const int expected = gameManager->getLetterGuesses() - 1;
+    gameManager->makeLetterGuess('Z');
+    gameManager->makeLetterGuess('Z');
+    gameManager->makeLetterGuess('Z');
+    ASSERT_EQ(expected, gameManager->getLetterGuesses());
 }

@@ -22,13 +22,13 @@ bool GameManager::makeLetterGuess(QChar letter)
 {
     this->gameState->setCurrentLetterGuess(letter);
     bool found = getSolutionWord().contains(letter, Qt::CaseInsensitive);
-    bool alreadyGuessed = this->gameState->getFoundLetters()
+    bool alreadyGuessed = this->gameState->getGuessedLetters()
             .contains(letter.toUpper());
     if (!found)
     {
-        this->gameState->addGuessedLetter(letter);
         if (!alreadyGuessed)
         {
+            this->gameState->addGuessedLetter(letter);
             this->gameState->decrementNumLetterGuesses();
         }
         checkGameLoss();
@@ -38,6 +38,7 @@ bool GameManager::makeLetterGuess(QChar letter)
         if (!alreadyGuessed)
         {
             this->gameState->addFoundLetter(this->gameState->getCurrentLetterGuess());
+            this->gameState->addGuessedLetter(letter);
         }
         checkGameWonByLetters();
     }
@@ -87,9 +88,6 @@ bool GameManager::hasFoundLetter(QChar letter)
     return found;
 }
 
-// --- End Public ---
-
-
 void GameManager::checkGameLoss()
 {
     if (getWordGuesses() == 0 || getLetterGuesses() == 0)
@@ -98,13 +96,14 @@ void GameManager::checkGameLoss()
     }
 }
 
+
 void GameManager::checkGameWonByLetters()
 {
     int wordCount = getSolutionLetters().count();
     int matched = 0;
     for (int i = 0; i < this->gameState->getFoundLetters().count(); ++i)
     {
-        QChar f = this->gameState->getFoundLetters()[i];
+        QChar f = this->gameState->getFoundLetters().at(i);
         for (int j = 0; j < getSolutionLetters().count(); ++j)
         {
             QChar c = getSolutionLetters().at(j);
@@ -140,6 +139,9 @@ void GameManager::resetGame()
 {
 
 }
+
+// --- End Public ---
+
 
 QString GameManager::getGuessedLetters()
 {

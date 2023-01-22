@@ -41,6 +41,7 @@ signals:
 private:
     GameStateCreator *gameStateCreator;
     GameState *gameState;
+    bool hasGuessedLetter(QChar letter);
 };
 
 #endif // GAMEMANAGER_H

@@ -38,6 +38,7 @@ void GameState::addFoundLetter(QChar letter)
 
 void GameState::populateSolutionLetters()
 {
+    this->solutionLetters.clear();
     for (short i = 0; i < this->solutionWord.length(); ++i)
     {
         this->solutionLetters.append(this->solutionWord[i]);
