@@ -23,6 +23,7 @@ public:
     // Getters
     Q_INVOKABLE QString getSolutionWord();
     Q_INVOKABLE QList<QChar> getSolutionLetters();
+    Q_INVOKABLE QString getMissedLetters();
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
     Q_INVOKABLE QString getGuessedLetters();
@@ -42,6 +43,7 @@ private:
     GameStateCreator *gameStateCreator;
     GameState *gameState;
     bool hasGuessedLetter(QChar letter);
+    QList<QChar> distinctSolutionLetters();
 };
 
 #endif // GAMEMANAGER_H

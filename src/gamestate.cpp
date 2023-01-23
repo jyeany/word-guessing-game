@@ -21,6 +21,11 @@ int GameState::decrementNumWordGuesses()
     return this->numWordGuesses;
 }
 
+void GameState::addMissedLetter(QChar letter)
+{
+    this->missedLetters.append(letter.toUpper());
+}
+
 void GameState::addGuessedLetter(QChar letter)
 {
     this->guessedLetters.append(letter.toUpper());
@@ -79,6 +84,11 @@ QChar GameState::getCurrentLetterGuess()
 QList<QChar> GameState::getFoundLetters()
 {
     return this->foundLetters;
+}
+
+QList<QChar> GameState::getMissedLetters()
+{
+    return this->missedLetters;
 }
 
 int GameState::getNumLetterGuesses()

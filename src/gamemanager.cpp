@@ -20,7 +20,7 @@ void GameManager::createGame(QString wordLength)
 
 bool GameManager::makeLetterGuess(QChar letter)
 {
-    this->gameState->setCurrentLetterGuess(letter);
+    this->gameState->setCurrentLetterGuess(letter.toUpper());
     bool found = getSolutionWord().contains(letter, Qt::CaseInsensitive);
     bool alreadyGuessed = this->gameState->getGuessedLetters()
             .contains(letter.toUpper());
@@ -29,6 +29,7 @@ bool GameManager::makeLetterGuess(QChar letter)
         if (!alreadyGuessed)
         {
             this->gameState->addGuessedLetter(letter);
+            this->gameState->addMissedLetter(letter);
             this->gameState->decrementNumLetterGuesses();
         }
         checkGameLoss();
@@ -99,14 +100,14 @@ void GameManager::checkGameLoss()
 
 void GameManager::checkGameWonByLetters()
 {
-    int wordCount = getSolutionLetters().count();
+    int wordCount = distinctSolutionLetters().count();
     int matched = 0;
     for (int i = 0; i < this->gameState->getFoundLetters().count(); ++i)
     {
         QChar f = this->gameState->getFoundLetters().at(i);
-        for (int j = 0; j < getSolutionLetters().count(); ++j)
+        for (int j = 0; j < distinctSolutionLetters().count(); ++j)
         {
-            QChar c = getSolutionLetters().at(j);
+            QChar c = distinctSolutionLetters().at(j);
             if (f == c)
             {
                 matched++;
@@ -143,12 +144,44 @@ void GameManager::resetGame()
 // --- End Public ---
 
 
+// ----- Private -----
+
+QList<QChar> GameManager::distinctSolutionLetters()
+{
+    QList<QChar> distinctLetters;
+    QList<QChar> solutionLetters = getSolutionLetters();
+    for (int i = 0; i < solutionLetters.count(); ++i)
+    {
+        if (!distinctLetters.contains(solutionLetters.at(i)))
+        {
+            distinctLetters.append(solutionLetters.at(i));
+        }
+    }
+    return distinctLetters;
+}
+
+// --- End Private ---
+
+
 QString GameManager::getGuessedLetters()
 {
     QList<QChar>::iterator c;
     QString result = "";
     QList<QChar> guessedLetters = this->gameState->getGuessedLetters();
     for (c = guessedLetters.begin(); c != guessedLetters.end(); ++c)
+    {
+        result = result + c->toUpper() + " ";
+    }
+
+    return result;
+}
+
+QString GameManager::getMissedLetters()
+{
+    QList<QChar>::iterator c;
+    QString result = "";
+    QList<QChar> missedLetters = this->gameState->getMissedLetters();
+    for (c = missedLetters.begin(); c != missedLetters.end(); ++c)
     {
         result = result + c->toUpper() + " ";
     }

@@ -104,7 +104,6 @@ TEST(LetterGuessGameSuite, WinByLettersGameWonLowerCase)
 {
     GameManager *gameManager = new GameManager();
     gameManager->createGame("Short");
-    gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("HAT");
     gameManager->makeLetterGuess('h');
     gameManager->makeLetterGuess('a');
@@ -117,11 +116,21 @@ TEST(LetterGuessGameSuite, SameLetterGuessMiss)
 {
     GameManager *gameManager = new GameManager();
     gameManager->createGame("Short");
-    gameManager->setGamePhase(in_progress);
     gameManager->setSolutionWord("BAT");
     const int expected = gameManager->getLetterGuesses() - 1;
     gameManager->makeLetterGuess('Z');
     gameManager->makeLetterGuess('Z');
     gameManager->makeLetterGuess('Z');
     ASSERT_EQ(expected, gameManager->getLetterGuesses());
+}
+
+TEST(LetterGuessGameSuite, RepeatLettersWin)
+{
+    GameManager *gameManager = new GameManager();
+    gameManager->createGame("Short");
+    gameManager->setSolutionWord("ADD");
+    gameManager->makeLetterGuess('A');
+    gameManager->makeLetterGuess('D');
+    const GamePhase result = gameManager->getGamePhase();
+    ASSERT_EQ(result, won);
 }

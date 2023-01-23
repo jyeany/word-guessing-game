@@ -24,7 +24,7 @@ GameState* GameStateCreator::shortGame()
 {
     GameState *shortGame = new GameState();
     shortGame->setGamePhase(in_progress);
-    shortGame->setSolutionWord("CAT");
+    shortGame->setSolutionWord("ADD");
     shortGame->setNumWordGuesses(3);
     shortGame->setNumLetterGuesses(10);
     return shortGame;
