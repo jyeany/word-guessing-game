@@ -24,6 +24,15 @@ qt_add_executable(appword-guess-game
     src/gamestate.cpp
     src/gamestatecreator.h
     src/gamestatecreator.cpp
+    src/dicts/shortwords.h
+    src/dicts/shortwords.cpp
+    src/dicts/mediumwords.h
+    src/dicts/mediumwords.cpp
+    src/dicts/longwords.h
+    src/dicts/longwords.cpp
+    src/dicts/iwordprovider.h
+    src/dicts/wordproviderfactory.h
+    src/dicts/wordproviderfactory.cpp
     src/main.cpp
 )
 
