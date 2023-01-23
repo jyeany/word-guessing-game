@@ -48,10 +48,24 @@ add_executable(WordGuessUnitTests
     ../../src/gamestatecreator.cpp
     ../../src/gamestate.h
     ../../src/gamestate.cpp
+    ../../src/dicts/dictutils.h
+    ../../src/dicts/dictutils.cpp
+    ../../src/dicts/wordproviderfactory.h
+    ../../src/dicts/wordproviderfactory.cpp
+    ../../src/dicts/iwordprovider.h
+    ../../src/dicts/shortwords.h
+    ../../src/dicts/shortwords.cpp
+    ../../src/dicts/mediumwords.h
+    ../../src/dicts/mediumwords.cpp
+    ../../src/dicts/longwords.h
+    ../../src/dicts/longwords.cpp
     main.cpp
     tst_game_manager_case.cpp
+    dicts/tst_dict_utils.cpp
     ${GTestFiles})
+
 add_test(NAME WordGuessUnitTests COMMAND WordGuessUnitTests)
+add_test(NAME DictUtilsUnitTests COMMAND DictUtilsUnitTests)
 
 target_link_libraries(WordGuessUnitTests
     PRIVATE Threads::Threads Qt6::Quick Qt6::Core)

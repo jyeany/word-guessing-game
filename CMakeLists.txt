@@ -33,6 +33,8 @@ qt_add_executable(appword-guess-game
     src/dicts/iwordprovider.h
     src/dicts/wordproviderfactory.h
     src/dicts/wordproviderfactory.cpp
+    src/dicts/dictutils.h
+    src/dicts/dictutils.cpp
     src/main.cpp
 )
 

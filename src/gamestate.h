@@ -4,6 +4,7 @@
 #include<QString>
 #include<QList>
 #include<QChar>
+#include "dicts/wordproviderfactory.h"
 
 enum GamePhase {won, lost, in_progress};
 

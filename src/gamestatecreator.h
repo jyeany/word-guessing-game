@@ -3,6 +3,7 @@
 
 #include <QString>
 #include "gamestate.h"
+#include "dicts/wordproviderfactory.h"
 
 class GameStateCreator
 {
@@ -11,6 +12,7 @@ public:
     GameState* createGame(QString wordLength);
 
 private:
+    WordProviderFactory *wordProviderFactory;
     GameState* shortGame();
     GameState* mediumGame();
     GameState* longGame();

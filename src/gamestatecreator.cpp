@@ -1,6 +1,9 @@
 #include "gamestatecreator.h"
 
-GameStateCreator::GameStateCreator() {}
+GameStateCreator::GameStateCreator()
+{
+    this->wordProviderFactory = new WordProviderFactory();
+}
 
 GameState* GameStateCreator::createGame(QString wordLength)
 {
@@ -23,8 +26,9 @@ GameState* GameStateCreator::createGame(QString wordLength)
 GameState* GameStateCreator::shortGame()
 {
     GameState *shortGame = new GameState();
+    IWordProvider *wordProvider = this->wordProviderFactory->createWordProvider("Short");
     shortGame->setGamePhase(in_progress);
-    shortGame->setSolutionWord("ADD");
+    shortGame->setSolutionWord(wordProvider->provideWord());
     shortGame->setNumWordGuesses(3);
     shortGame->setNumLetterGuesses(10);
     return shortGame;
@@ -33,11 +37,21 @@ GameState* GameStateCreator::shortGame()
 GameState* GameStateCreator::mediumGame()
 {
     GameState *mediumGame = new GameState();
+    IWordProvider *wordProvider = this->wordProviderFactory->createWordProvider("Medium");
+    mediumGame->setGamePhase(in_progress);
+    mediumGame->setSolutionWord(wordProvider->provideWord());
+    mediumGame->setNumWordGuesses(4);
+    mediumGame->setNumLetterGuesses(12);
     return mediumGame;
 }
 
 GameState* GameStateCreator::longGame()
 {
     GameState *longGame = new GameState();
+    IWordProvider *wordProvider = this->wordProviderFactory->createWordProvider("Long");
+    longGame->setGamePhase(in_progress);
+    longGame->setSolutionWord(wordProvider->provideWord());
+    longGame->setNumWordGuesses(5);
+    longGame->setNumLetterGuesses(15);
     return longGame;
 }
