@@ -10,6 +10,7 @@ Item {
     ColumnLayout {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
+        spacing: 15
 
         Label {
             Layout.alignment: Qt.AlignHCenter
@@ -21,6 +22,19 @@ Item {
                 duration: 1000
                 running: true
             }
+        }
+
+        Label {
+            Layout.alignment: Qt.AlignHCenter
+            font.pointSize: 24
+            text: "The Word Was:"
+        }
+
+        Label {
+            Layout.alignment: Qt.AlignHCenter
+            font.pointSize: 32
+            color: "yellow"
+            text: gameManager.getSolutionWord()
         }
 
         Button {
