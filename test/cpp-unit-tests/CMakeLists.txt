@@ -62,6 +62,7 @@ add_executable(WordGuessUnitTests
     main.cpp
     tst_game_manager_case.cpp
     dicts/tst_dict_utils.cpp
+    dicts/tst_word_provider_factory.cpp
     ${GTestFiles})
 
 add_test(NAME WordGuessUnitTests COMMAND WordGuessUnitTests)
