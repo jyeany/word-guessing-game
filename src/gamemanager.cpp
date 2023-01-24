@@ -138,7 +138,7 @@ QString GameManager::endGameMessage()
 
 void GameManager::resetGame()
 {
-
+    delete(this->gameState);
 }
 
 // --- End Public ---

@@ -37,7 +37,10 @@ ApplicationWindow {
 
             Button {
                 text: "Back"
-                onClicked: stack.pop()
+                onClicked: {
+                    gameManager.resetGame()
+                    stack.pop()
+                }
             }
 
             Label {
