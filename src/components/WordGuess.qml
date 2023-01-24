@@ -7,11 +7,25 @@ RowLayout {
     anchors.horizontalCenter: parent.horizontalCenter
     spacing: 30
 
+    function performWordGuess() {
+        const correct = gameManager.makeWordGuess(txtWordGuess.text)
+        if (!correct) {
+            lblWordGuessRemaining.text = "remaining: " + gameManager.getWordGuesses()
+            const remaining = gameManager.getWordGuesses();
+            if (remaining === 0) {
+                stack.push(gameEndDisplay)
+            }
+        } else {
+            stack.push(gameEndDisplay)
+        }
+    }
+
     ColumnLayout {
 
         TextField {
             id: txtWordGuess
             placeholderText: "Word Guess"
+            onAccepted: performWordGuess()
         }
 
         Label {
@@ -24,17 +38,6 @@ RowLayout {
     Button {
         id: btnGuessWord
         text: "Guess Word"
-        onClicked: {
-            const correct = gameManager.makeWordGuess(txtWordGuess.text)
-            if (!correct) {
-                lblWordGuessRemaining.text = "remaining: " + gameManager.getWordGuesses()
-                const remaining = gameManager.getWordGuesses();
-                if (remaining === 0) {
-                    stack.push(gameEndDisplay)
-                }
-            } else {
-                stack.push(gameEndDisplay)
-            }
-        }
+        onClicked: performWordGuess()
     }
 }

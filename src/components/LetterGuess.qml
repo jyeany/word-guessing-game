@@ -9,6 +9,26 @@ RowLayout {
     anchors.horizontalCenter: parent.horizontalCenter
     spacing: 30
 
+    function performLetterGuess() {
+        const found = gameManager.makeLetterGuess(txtLetterGuess.text)
+        if (!found) {
+            const remaining = gameManager.getLetterGuesses()
+            if (remaining === 0) {
+                stack.push(gameEndDisplay)
+            } else {
+                lblLetterGuess.text =
+                        "remaining: " + gameManager.getLetterGuesses()
+            }
+        } else {
+            const gameMode = gameManager.getGameModeStr()
+            if (gameMode === "won") {
+                stack.push(gameEndDisplay)
+            }
+        }
+        txtLetterGuess.text = ""
+        txtLetterGuess.focus = true
+    }
+
     ColumnLayout {
 
         TextField {
@@ -16,6 +36,7 @@ RowLayout {
             placeholderText: "Letter Guess"
             maximumLength: 1
             focus: true
+            onAccepted: performLetterGuess()
         }
 
         Label {
@@ -29,25 +50,7 @@ RowLayout {
         Button {
             id: btnGuessLetter
             text: "Guess Letter"
-            onClicked: {
-                const found = gameManager.makeLetterGuess(txtLetterGuess.text)
-                if (!found) {
-                    const remaining = gameManager.getLetterGuesses()
-                    if (remaining === 0) {
-                        stack.push(gameEndDisplay)
-                    } else {
-                        lblLetterGuess.text =
-                                "remaining: " + gameManager.getLetterGuesses()
-                    }
-                } else {
-                    const gameMode = gameManager.getGameModeStr()
-                    if (gameMode === "won") {
-                        stack.push(gameEndDisplay)
-                    }
-                }
-                txtLetterGuess.text = ""
-                txtLetterGuess.focus = true
-            }
+            onClicked: performLetterGuess()
         }
     }
 }

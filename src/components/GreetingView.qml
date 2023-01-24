@@ -16,7 +16,7 @@ Column {
     Label {
         anchors.horizontalCenter: parent.horizontalCenter
         font.pointSize: 18
-        text: "Please Choose a Difficulty"
+        text: "Please Choose a Word Length"
     }
 
     Button {
