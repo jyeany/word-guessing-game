@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Material
+import "./buttons"
 
 Column {
     id: greetingView
@@ -19,26 +20,31 @@ Column {
         text: "Please Choose a Word Length"
     }
 
-    Button {
+    ColorButton {
         id: easyButton
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Short (3-5 Letters)"
-        background: Rectangle {
-                color: parent.down ? "white" :
-                        (parent.hovered ? "gray" : "green")
-        }
+        bgColor: "#0f7d2c"
+        hoverColor: "#36c25b"
+        pressedColor: "#67eb8a"
         onClicked: showGameBoard("Short")
     }
 
-    Button {
+    ColorButton {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Medium (5-8 Letters)"
+        bgColor: "#ada91d"
+        hoverColor: "#d1cc38"
+        pressedColor: "#e6e155"
         onClicked: showGameBoard("Medium")
     }
 
-    Button {
+    ColorButton {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Long (Over 8 Letters)"
+        bgColor: "#9c2e10"
+        hoverColor: "#b33917"
+        pressedColor: "#d14e2a"
         onClicked: showGameBoard("Long")
     }
 }

@@ -27,6 +27,7 @@ RowLayout {
         TextField {
             id: txtWordGuess
             placeholderText: "Word Guess"
+            maximumLength: 15
             onAccepted: performWordGuess()
         }
 
@@ -41,5 +42,11 @@ RowLayout {
         id: btnGuessWord
         text: "Guess Word"
         onClicked: performWordGuess()
+
+        HoverHandler {
+            id: mouse
+            acceptedDevices: PointerDevice.Mouse
+            cursorShape: Qt.PointingHandCursor
+        }
     }
 }

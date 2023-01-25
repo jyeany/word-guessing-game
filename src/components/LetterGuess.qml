@@ -51,6 +51,12 @@ RowLayout {
             id: btnGuessLetter
             text: "Guess Letter"
             onClicked: performLetterGuess()
+
+            HoverHandler {
+                id: mouse
+                acceptedDevices: PointerDevice.Mouse
+                cursorShape: Qt.PointingHandCursor
+            }
         }
     }
 }

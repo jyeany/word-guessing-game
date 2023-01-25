@@ -50,6 +50,7 @@ qt_add_qml_module(appword-guess-game
         src/components/GreetingView.qml
         src/components/MissedLetters.qml
         src/components/MissedWords.qml
+        src/components/buttons/ColorButton.qml
 )
 
 set_target_properties(appword-guess-game PROPERTIES

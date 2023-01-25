@@ -44,6 +44,12 @@ Item {
                 stack.clear()
                 stack.push(greetingView)
             }
+
+            HoverHandler {
+                id: mouse
+                acceptedDevices: PointerDevice.Mouse
+                cursorShape: Qt.PointingHandCursor
+            }
         }
 
     }

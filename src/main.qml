@@ -41,6 +41,12 @@ ApplicationWindow {
                     gameManager.resetGame()
                     stack.pop()
                 }
+
+                HoverHandler {
+                    id: mouse
+                    acceptedDevices: PointerDevice.Mouse
+                    cursorShape: Qt.PointingHandCursor
+                }
             }
 
             Label {
