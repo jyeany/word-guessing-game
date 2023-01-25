@@ -4,7 +4,6 @@
 #include<QString>
 #include<QList>
 #include<QChar>
-#include "dicts/wordproviderfactory.h"
 
 enum GamePhase {won, lost, in_progress};
 
@@ -19,6 +18,7 @@ public:
     void addGuessedLetter(QChar letter);
     void addFoundLetter(QChar letter);
     void addMissedLetter(QChar letter);
+    void addMissedWord(QString word);
 
     // getters
     GamePhase getGamePhase();
@@ -28,6 +28,7 @@ public:
     QChar getCurrentLetterGuess();
     QList<QChar> getFoundLetters();
     QList<QChar> getMissedLetters();
+    QList<QString> getMissedWords();
     int getNumLetterGuesses();
     int getNumWordGuesses();
 
@@ -48,6 +49,7 @@ private:
     QChar currentLetterGuess;
     QList<QChar> foundLetters;
     QList<QChar> missedLetters;
+    QList<QString> missedWords;
     int numLetterGuesses;
     int numWordGuesses;
 

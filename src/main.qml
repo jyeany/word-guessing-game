@@ -8,7 +8,7 @@ import "./components"
 
 ApplicationWindow {
     width: 640
-    height: 480
+    height: 800
     visible: true
     title: qsTr("Word Guessing Game")
     Material.theme: Material.Dark
@@ -57,6 +57,8 @@ ApplicationWindow {
             WordGuess {}
 
             MissedLetters {}
+
+            MissedWords {}
         }
     }
 

@@ -53,6 +53,20 @@ TEST(WordGuessGameSuite, LossByWordGuesses)
     ASSERT_EQ(lost, gameManager->getGamePhase());
 }
 
+TEST(WordGuessGameSuite, RepeatMissedWordGuesses)
+{
+    GameManager *gameManager = new GameManager();
+    int initialWordGuesses = 3;
+    int expected = initialWordGuesses - 1;
+    QString bogusGuess = "asdfasdfasdfasdf";
+    gameManager->createGame("Short");
+    gameManager->setWordGuesses(3);
+    gameManager->makeWordGuess(bogusGuess);
+    gameManager->makeWordGuess(bogusGuess);
+    int remaining = gameManager->getWordGuesses();
+    ASSERT_EQ(expected, remaining);
+}
+
 TEST(LetterGuessGameSuite, WonEndMessage)
 {
     GameManager *gameManager = new GameManager();

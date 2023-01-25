@@ -24,6 +24,7 @@ public:
     Q_INVOKABLE QString getSolutionWord();
     Q_INVOKABLE QList<QChar> getSolutionLetters();
     Q_INVOKABLE QString getMissedLetters();
+    Q_INVOKABLE QString getMissedWords();
     Q_INVOKABLE int getWordGuesses();
     Q_INVOKABLE int getLetterGuesses();
     Q_INVOKABLE QString getGuessedLetters();
@@ -38,10 +39,14 @@ public:
 
 signals:
     void letterGuessesUpdated();
+    void wordGuessesUpdated();
 
 private:
+    // properties
     GameStateCreator *gameStateCreator;
     GameState *gameState;
+
+    // functions
     bool hasGuessedLetter(QChar letter);
     QList<QChar> distinctSolutionLetters();
 };

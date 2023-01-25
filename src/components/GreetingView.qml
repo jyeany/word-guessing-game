@@ -23,6 +23,10 @@ Column {
         id: easyButton
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Short (3-5 Letters)"
+        background: Rectangle {
+                color: parent.down ? "white" :
+                        (parent.hovered ? "gray" : "green")
+        }
         onClicked: showGameBoard("Short")
     }
 

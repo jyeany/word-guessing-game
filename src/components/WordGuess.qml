@@ -18,6 +18,8 @@ RowLayout {
         } else {
             stack.push(gameEndDisplay)
         }
+        txtWordGuess.text = ""
+        txtWordGuess.focus = true
     }
 
     ColumnLayout {

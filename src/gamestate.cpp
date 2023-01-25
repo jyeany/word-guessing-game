@@ -36,6 +36,11 @@ void GameState::addFoundLetter(QChar letter)
     this->foundLetters.append(letter.toUpper());
 }
 
+void GameState::addMissedWord(QString word)
+{
+    this->missedWords.append(word.toUpper());
+}
+
 // --- End Public ---
 
 
@@ -89,6 +94,11 @@ QList<QChar> GameState::getFoundLetters()
 QList<QChar> GameState::getMissedLetters()
 {
     return this->missedLetters;
+}
+
+QList<QString> GameState::getMissedWords()
+{
+    return this->missedWords;
 }
 
 int GameState::getNumLetterGuesses()

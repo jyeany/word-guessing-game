@@ -60,8 +60,15 @@ bool GameManager::makeWordGuess(QString guess)
     }
     else
     {
-        this->gameState->decrementNumWordGuesses();
-        checkGameLoss();
+        bool wordAlreadyGuessed =
+                this->gameState->getMissedWords().contains(guess.toUpper());
+        if (!wordAlreadyGuessed)
+        {
+            this->gameState->addMissedWord(guess);
+            this->gameState->decrementNumWordGuesses();
+            checkGameLoss();
+            emit wordGuessesUpdated();
+        }
         return false;
     }
 }
@@ -162,6 +169,16 @@ QList<QChar> GameManager::distinctSolutionLetters()
 
 // --- End Private ---
 
+QString GameManager::getMissedWords()
+{
+    QString result = "";
+    QList<QString> missedWords = this->gameState->getMissedWords();
+    for (int i = 0; i < missedWords.count(); ++i)
+    {
+        result.append(missedWords.at(i) + "\n");
+    }
+    return result;
+}
 
 QString GameManager::getGuessedLetters()
 {
