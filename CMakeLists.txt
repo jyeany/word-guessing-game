@@ -2,13 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(word-guess-game VERSION 0.1 LANGUAGES CXX)
 
-# Use this setting to get build working with CLion
-# set(CMAKE_PREFIX_PATH "/home/jyeany/Qt/6.4.2/gcc_64")
-
-if (MSVC)
-    set(CMAKE_PREFIX_PATH, "C:/Qt/6.4.1/msvc2019_64")
-endif ()
-
+set(CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH})
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 

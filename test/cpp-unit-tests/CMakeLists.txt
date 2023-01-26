@@ -4,13 +4,8 @@ project(WordGuessUnitTests LANGUAGES CXX)
 
 enable_testing()
 
-if (UNIX)
-    set(CMAKE_PREFIX_PATH "/home/jyeany/Qt/6.4.2/gcc_64")
-    set(GOOGLETEST_DIR "/home/jyeany/Development/googletest")
-elseif (MSVC)
-    set(CMAKE_PREFIX_PATH "C:/Qt/6.4.1/msvc2019_64")
-    set(GOOGLETEST_DIR "C:/Users/jyean/DevTools/GoogleTest/googletest")
-endif ()
+set(CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH})
+set(GOOGLETEST_DIR $ENV{GOOGLETEST_DIR})
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
