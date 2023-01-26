@@ -53,24 +53,28 @@ bool GameManager::makeLetterGuess(QChar letter)
 
 bool GameManager::makeWordGuess(QString guess)
 {
-    if (getSolutionWord() == guess.toUpper())
-    {
-        this->gameState->setGamePhase(won);
-        return true;
-    }
-    else
-    {
-        bool wordAlreadyGuessed =
-                this->gameState->getMissedWords().contains(guess.toUpper());
-        if (!wordAlreadyGuessed)
+    bool correct = false;
+    if (guess.length() > 0) {
+        if (getSolutionWord() == guess.toUpper())
         {
-            this->gameState->addMissedWord(guess);
-            this->gameState->decrementNumWordGuesses();
-            checkGameLoss();
-            emit wordGuessesUpdated();
+            this->gameState->setGamePhase(won);
+            correct = true;
         }
-        return false;
+        else
+        {
+            bool wordAlreadyGuessed =
+                    this->gameState->getMissedWords().contains(guess.toUpper());
+            if (!wordAlreadyGuessed)
+            {
+                this->gameState->addMissedWord(guess);
+                this->gameState->decrementNumWordGuesses();
+                checkGameLoss();
+                emit wordGuessesUpdated();
+            }
+            correct = false;
+        }
     }
+    return correct;
 }
 
 QList<int> GameManager::currentLetterIndices()

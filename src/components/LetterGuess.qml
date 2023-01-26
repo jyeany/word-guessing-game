@@ -10,19 +10,21 @@ RowLayout {
     spacing: 30
 
     function performLetterGuess() {
-        const found = gameManager.makeLetterGuess(txtLetterGuess.text)
-        if (!found) {
-            const remaining = gameManager.getLetterGuesses()
-            if (remaining === 0) {
-                stack.push(gameEndDisplay)
+        if (txtLetterGuess.text.length > 0) {
+            const found = gameManager.makeLetterGuess(txtLetterGuess.text)
+            if (!found) {
+                const remaining = gameManager.getLetterGuesses()
+                if (remaining === 0) {
+                    stack.push(gameEndDisplay)
+                } else {
+                    lblLetterGuess.text =
+                            "remaining: " + gameManager.getLetterGuesses()
+                }
             } else {
-                lblLetterGuess.text =
-                        "remaining: " + gameManager.getLetterGuesses()
-            }
-        } else {
-            const gameMode = gameManager.getGameModeStr()
-            if (gameMode === "won") {
-                stack.push(gameEndDisplay)
+                const gameMode = gameManager.getGameModeStr()
+                if (gameMode === "won") {
+                    stack.push(gameEndDisplay)
+                }
             }
         }
         txtLetterGuess.text = ""

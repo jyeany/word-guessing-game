@@ -67,6 +67,18 @@ TEST(WordGuessGameSuite, RepeatMissedWordGuesses)
     ASSERT_EQ(expected, remaining);
 }
 
+TEST(WordGuessGameSuite, EmptyWordGuess)
+{
+    GameManager *gameManager = new GameManager();
+    int initialWordGuesses = 3;
+    QString emptyGuess = "";
+    gameManager->createGame("Short");
+    gameManager->setWordGuesses(initialWordGuesses);
+    gameManager->makeWordGuess(emptyGuess);
+    int remaining = gameManager->getWordGuesses();
+    ASSERT_EQ(initialWordGuesses, remaining);
+}
+
 TEST(LetterGuessGameSuite, WonEndMessage)
 {
     GameManager *gameManager = new GameManager();

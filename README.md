@@ -1,8 +1,9 @@
 # Word Guessing Game 
 
 ## Overview
-Simple word guessing game built using Qt6.  
-Try it out here: <demo>  
+Simple word guessing game built using Qt6. 
+Created to experiment with Qt6 development and deployment.  
+Try the web assembly deployment out here: <demo>  
   
 ## Structure
 _src_: Source code for the project  
