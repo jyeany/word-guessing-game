@@ -1,9 +1,16 @@
 #include "gamestatecreator.h"
 
+// ----- Constructors -----
+
 GameStateCreator::GameStateCreator()
 {
     this->wordProviderFactory = new WordProviderFactory();
 }
+
+// --- End Constructors ---
+
+
+// ----- Public -----
 
 GameState* GameStateCreator::createGame(QString wordLength)
 {
@@ -22,6 +29,11 @@ GameState* GameStateCreator::createGame(QString wordLength)
     }
     return gameState;
 }
+
+// --- End Public ---
+
+
+// ----- Private -----
 
 GameState* GameStateCreator::shortGame()
 {
@@ -55,3 +67,5 @@ GameState* GameStateCreator::longGame()
     longGame->setNumLetterGuesses(15);
     return longGame;
 }
+
+// --- End Private ---
