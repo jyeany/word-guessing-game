@@ -3,6 +3,7 @@
 ## Overview
 Simple word guessing game built using Qt6.  
 Created to experiment with Qt6 development and deployment.  
+The web assembly deployment can be started using the link below.
   
 Play the game: [Click to Start](https://jyeany.github.io/word-guessing-game/)  
   
