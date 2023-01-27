@@ -47,7 +47,6 @@ private:
     GameState *gameState;
 
     // functions
-    bool hasGuessedLetter(QChar letter);
     QList<QChar> distinctSolutionLetters();
 };
 

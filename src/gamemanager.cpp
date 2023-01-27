@@ -73,6 +73,31 @@ bool GameManager::makeWordGuess(QString guess)
     }
 }
 
+QString GameManager::endGameMessage()
+{
+    QString msg;
+    if (this->gameState->getGamePhase() == won)
+    {
+        msg = "You Win!";
+    }
+    else if (this->gameState->getGamePhase() == lost)
+    {
+        msg = "You Lose!";
+    }
+    return msg;
+}
+
+void GameManager::resetGame()
+{
+    delete(this->gameState);
+}
+
+bool GameManager::hasFoundLetter(QChar letter)
+{
+    bool found = this->gameState->getFoundLetters().contains(letter);
+    return found;
+}
+
 QList<int> GameManager::currentLetterIndices()
 {
     QList<QChar> solutionLetters = getSolutionLetters();
@@ -88,12 +113,6 @@ QList<int> GameManager::currentLetterIndices()
         ++i;
     }
     return indices;
-}
-
-bool GameManager::hasFoundLetter(QChar letter)
-{
-    bool found = this->gameState->getFoundLetters().contains(letter);
-    return found;
 }
 
 void GameManager::checkGameLoss()
@@ -129,25 +148,6 @@ void GameManager::checkGameWonByLetters()
     }
 }
 
-QString GameManager::endGameMessage()
-{
-    QString msg;
-    if (this->gameState->getGamePhase() == won)
-    {
-        msg = "You Win!";
-    }
-    else if (this->gameState->getGamePhase() == lost)
-    {
-        msg = "You Lose!";
-    }
-    return msg;
-}
-
-void GameManager::resetGame()
-{
-    delete(this->gameState);
-}
-
 // --- End Public ---
 
 
@@ -169,28 +169,17 @@ QList<QChar> GameManager::distinctSolutionLetters()
 
 // --- End Private ---
 
-QString GameManager::getMissedWords()
+
+// ----- Getters -----
+
+QString GameManager::getSolutionWord()
 {
-    QString result = "";
-    QList<QString> missedWords = this->gameState->getMissedWords();
-    for (int i = 0; i < missedWords.count(); ++i)
-    {
-        result.append(missedWords.at(i) + "\n");
-    }
-    return result;
+    return this->gameState->getSolutionWord();
 }
 
-QString GameManager::getGuessedLetters()
+QList<QChar> GameManager::getSolutionLetters()
 {
-    QList<QChar>::iterator c;
-    QString result = "";
-    QList<QChar> guessedLetters = this->gameState->getGuessedLetters();
-    for (c = guessedLetters.begin(); c != guessedLetters.end(); ++c)
-    {
-        result = result + c->toUpper() + " ";
-    }
-
-    return result;
+    return this->gameState->getSolutionLetters();
 }
 
 QString GameManager::getMissedLetters()
@@ -206,19 +195,38 @@ QString GameManager::getMissedLetters()
     return result;
 }
 
-QString GameManager::getSolutionWord()
+QString GameManager::getMissedWords()
 {
-    return this->gameState->getSolutionWord();
+    QString result = "";
+    QList<QString> missedWords = this->gameState->getMissedWords();
+    for (int i = 0; i < missedWords.count(); ++i)
+    {
+        result.append(missedWords.at(i) + "\n");
+    }
+    return result;
 }
 
-void GameManager::setSolutionWord(QString word)
+int GameManager::getWordGuesses()
 {
-    this->gameState->setSolutionWord(word.toUpper());
+    return this->gameState->getNumWordGuesses();
 }
 
-QList<QChar> GameManager::getSolutionLetters()
-{   
-    return this->gameState->getSolutionLetters();
+int GameManager::getLetterGuesses()
+{
+    return this->gameState->getNumLetterGuesses();
+}
+
+QString GameManager::getGuessedLetters()
+{
+    QList<QChar>::iterator c;
+    QString result = "";
+    QList<QChar> guessedLetters = this->gameState->getGuessedLetters();
+    for (c = guessedLetters.begin(); c != guessedLetters.end(); ++c)
+    {
+        result = result + c->toUpper() + " ";
+    }
+
+    return result;
 }
 
 QString GameManager::getGameModeStr()
@@ -241,14 +249,14 @@ GamePhase GameManager::getGamePhase()
     return this->gameState->getGamePhase();
 }
 
-void GameManager::setGamePhase(GamePhase gamePhase)
-{
-    this->gameState->setGamePhase(gamePhase);
-}
+// --- End Getters ---
 
-int GameManager::getWordGuesses()
+
+// ----- Setters -----
+
+void GameManager::setSolutionWord(QString word)
 {
-    return this->gameState->getNumWordGuesses();
+    this->gameState->setSolutionWord(word.toUpper());
 }
 
 void GameManager::setWordGuesses(int guesses)
@@ -256,12 +264,14 @@ void GameManager::setWordGuesses(int guesses)
     this->gameState->setNumWordGuesses(guesses);
 }
 
-int GameManager::getLetterGuesses()
-{
-    return this->gameState->getNumLetterGuesses();
-}
-
 void GameManager::setLetterGuesses(int guesses)
 {
     this->gameState->setNumLetterGuesses(guesses);
 }
+
+void GameManager::setGamePhase(GamePhase gamePhase)
+{
+    this->gameState->setGamePhase(gamePhase);
+}
+
+// --- End Setters ---
