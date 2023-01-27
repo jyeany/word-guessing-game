@@ -1,0 +1,12 @@
+module word-guess-game
+typeinfo appword-guess-game.qmltypes
+prefer :/word-guess-game/
+WordDisplay 1.0 src/components/WordDisplay.qml
+WordGuess 1.0 src/components/WordGuess.qml
+LetterGuess 1.0 src/components/LetterGuess.qml
+GameEnd 1.0 src/components/GameEnd.qml
+GreetingView 1.0 src/components/GreetingView.qml
+MissedLetters 1.0 src/components/MissedLetters.qml
+MissedWords 1.0 src/components/MissedWords.qml
+ColorButton 1.0 src/components/buttons/ColorButton.qml
+

@@ -1,0 +1,14 @@
+-rootPath
+/home/jyeany/QtProjects/word-guess-game
+-cmake-output
+-output-file
+/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.qt_plugins/Qt6_QmlPlugins_Imports_appword-guess-game.cmake
+-importPath
+/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/word-guess-game
+-importPath
+/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release
+-importPath
+/home/jyeany/Qt/6.4.2/wasm_32/./qml
+-qrcFiles
+/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmake_word-guess-game.qrc
+/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/appword-guess-game_raw_qml_0.qrc

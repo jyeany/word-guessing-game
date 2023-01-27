@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"test/cpp-unit-tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "WordGuessUnitTests_autogen_timestamp_deps::@8dcafa4ec3b7b9307f2f"
+		}
+	],
+	"id" : "WordGuessUnitTests_autogen::@8dcafa4ec3b7b9307f2f",
+	"isGeneratorProvided" : true,
+	"name" : "WordGuessUnitTests_autogen",
+	"paths" : 
+	{
+		"build" : "test/cpp-unit-tests",
+		"source" : "test/cpp-unit-tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/CMakeFiles/WordGuessUnitTests_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/CMakeFiles/WordGuessUnitTests_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/WordGuessUnitTests_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

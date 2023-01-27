@@ -1,0 +1,3757 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "appword-guess-game.js"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_options",
+			"_qt_internal_wasm_add_target_helpers",
+			"_qt_internal_finalize_executable",
+			"qt6_finalize_target",
+			"_qt_internal_add_wasm_extra_exported_methods",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"__qt_internal_include_plugin_packages",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"qt6_import_qml_plugins",
+			"cmake_language",
+			"__qt_internal_apply_plugin_imports_finalizer_mode",
+			"qt_find_package_system_or_bundled",
+			"_qt_internal_find_third_party_dependencies",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen"
+		],
+		"files" : 
+		[
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Core/Qt6WasmMacros.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:685:EVAL",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6VirtualKeyboard/Qt6VirtualKeyboardDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6VirtualKeyboard/Qt6VirtualKeyboardConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Config.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6DataVisualizationQml/Qt6DataVisualizationQmlDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6DataVisualizationQml/Qt6DataVisualizationQmlConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlpluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/Qt6QmlPlugins.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick2pluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick2pluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6modelspluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6modelspluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2pluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2pluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2implpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2implpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstylepluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstylepluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstylepluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstylepluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2imaginestylepluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2imaginestylepluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstylepluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstylepluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstylepluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstylepluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktemplates2pluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktemplates2pluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6quickwindowTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6quickwindowConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstyleimplpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2materialstyleimplpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2imaginestyleimplpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2imaginestyleimplpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstyleimplpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstyleimplpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstyleimplpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstyleimplpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlshapespluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlshapespluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquicklayoutspluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquicklayoutspluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6QuickTestpluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6QuickTestpluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QWasmIntegrationPluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QWasmIntegrationPluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QmlModels/Qt6QmlModelsTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QmlModels/Qt6QmlModelsConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Targets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Config.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControlsTestUtilsPrivate/Qt6QuickControlsTestUtilsPrivateDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControlsTestUtilsPrivate/Qt6QuickControlsTestUtilsPrivateConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6QuickControlsTestUtilsPrivatepluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6QuickControlsTestUtilsPrivatepluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControls2Impl/Qt6QuickControls2ImplTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControls2Impl/Qt6QuickControls2ImplConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickDialogs2QuickImpl/Qt6QuickDialogs2QuickImplDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickDialogs2QuickImpl/Qt6QuickDialogs2QuickImplConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Config.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Dependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickShapesPrivate/Qt6QuickShapesPrivateTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickShapesPrivate/Qt6QuickShapesPrivateConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlshapespluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickLayouts/Qt6QuickLayoutsTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickLayouts/Qt6QuickLayoutsConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquicklayoutspluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickTest/Qt6QuickTestTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickTest/Qt6QuickTestConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickTestUtilsPrivate/Qt6QuickTestUtilsPrivateDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6QuickTestUtilsPrivate/Qt6QuickTestUtilsPrivateConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Test/Qt6TestVersionlessTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Test/Qt6TestConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFindWrapHelper.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/FindWrapJpeg.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QJpegPluginDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/FindWrapHarfbuzz.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/FindWrapFreetype.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/FindWrapPNG.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/FindWrapZLIB.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/FindWrapPCRE2.cmake",
+			"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Targets.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 711,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 548,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 584,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 1,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 705,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 646,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 69,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 90,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 549,
+				"parent" : 2
+			},
+			{
+				"command" : 13,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"file" : 17,
+				"parent" : 14
+			},
+			{
+				"command" : 13,
+				"file" : 17,
+				"line" : 157,
+				"parent" : 15
+			},
+			{
+				"file" : 16,
+				"parent" : 16
+			},
+			{
+				"command" : 12,
+				"file" : 16,
+				"line" : 40,
+				"parent" : 17
+			},
+			{
+				"file" : 15,
+				"parent" : 18
+			},
+			{
+				"command" : 15,
+				"file" : 15,
+				"line" : 39,
+				"parent" : 19
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 20
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 21
+			},
+			{
+				"file" : 14,
+				"parent" : 22
+			},
+			{
+				"command" : 12,
+				"file" : 14,
+				"line" : 123,
+				"parent" : 23
+			},
+			{
+				"file" : 13,
+				"parent" : 24
+			},
+			{
+				"command" : 16,
+				"file" : 13,
+				"line" : 5,
+				"parent" : 25
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 439,
+				"parent" : 26
+			},
+			{
+				"file" : 11,
+				"parent" : 27
+			},
+			{
+				"command" : 12,
+				"file" : 11,
+				"line" : 48,
+				"parent" : 28
+			},
+			{
+				"file" : 10,
+				"parent" : 29
+			},
+			{
+				"command" : 15,
+				"file" : 10,
+				"line" : 15,
+				"parent" : 30
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 31
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 32
+			},
+			{
+				"file" : 9,
+				"parent" : 33
+			},
+			{
+				"command" : 12,
+				"file" : 9,
+				"line" : 40,
+				"parent" : 34
+			},
+			{
+				"file" : 8,
+				"parent" : 35
+			},
+			{
+				"command" : 15,
+				"file" : 8,
+				"line" : 39,
+				"parent" : 36
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 37
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 38
+			},
+			{
+				"file" : 5,
+				"parent" : 39
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 52,
+				"parent" : 40
+			},
+			{
+				"file" : 4,
+				"parent" : 41
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 61,
+				"parent" : 42
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 123,
+				"parent" : 40
+			},
+			{
+				"file" : 25,
+				"parent" : 44
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 24,
+				"parent" : 46
+			},
+			{
+				"command" : 12,
+				"file" : 24,
+				"line" : 48,
+				"parent" : 47
+			},
+			{
+				"file" : 23,
+				"parent" : 48
+			},
+			{
+				"command" : 15,
+				"file" : 23,
+				"line" : 15,
+				"parent" : 49
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 50
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 51
+			},
+			{
+				"file" : 22,
+				"parent" : 52
+			},
+			{
+				"command" : 12,
+				"file" : 22,
+				"line" : 40,
+				"parent" : 53
+			},
+			{
+				"file" : 21,
+				"parent" : 54
+			},
+			{
+				"command" : 15,
+				"file" : 21,
+				"line" : 39,
+				"parent" : 55
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 56
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 57
+			},
+			{
+				"file" : 20,
+				"parent" : 58
+			},
+			{
+				"command" : 12,
+				"file" : 20,
+				"line" : 40,
+				"parent" : 59
+			},
+			{
+				"file" : 19,
+				"parent" : 60
+			},
+			{
+				"command" : 15,
+				"file" : 19,
+				"line" : 39,
+				"parent" : 61
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 62
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 63
+			},
+			{
+				"file" : 16,
+				"parent" : 64
+			},
+			{
+				"command" : 12,
+				"file" : 16,
+				"line" : 52,
+				"parent" : 65
+			},
+			{
+				"file" : 18,
+				"parent" : 66
+			},
+			{
+				"command" : 11,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 67
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 27,
+				"parent" : 69
+			},
+			{
+				"command" : 12,
+				"file" : 27,
+				"line" : 51,
+				"parent" : 70
+			},
+			{
+				"file" : 26,
+				"parent" : 71
+			},
+			{
+				"command" : 11,
+				"file" : 26,
+				"line" : 62,
+				"parent" : 72
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 29,
+				"parent" : 74
+			},
+			{
+				"command" : 12,
+				"file" : 29,
+				"line" : 51,
+				"parent" : 75
+			},
+			{
+				"file" : 28,
+				"parent" : 76
+			},
+			{
+				"command" : 11,
+				"file" : 28,
+				"line" : 62,
+				"parent" : 77
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 31,
+				"parent" : 79
+			},
+			{
+				"command" : 12,
+				"file" : 31,
+				"line" : 51,
+				"parent" : 80
+			},
+			{
+				"file" : 30,
+				"parent" : 81
+			},
+			{
+				"command" : 11,
+				"file" : 30,
+				"line" : 62,
+				"parent" : 82
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 33,
+				"parent" : 84
+			},
+			{
+				"command" : 12,
+				"file" : 33,
+				"line" : 51,
+				"parent" : 85
+			},
+			{
+				"file" : 32,
+				"parent" : 86
+			},
+			{
+				"command" : 11,
+				"file" : 32,
+				"line" : 62,
+				"parent" : 87
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 35,
+				"parent" : 89
+			},
+			{
+				"command" : 12,
+				"file" : 35,
+				"line" : 51,
+				"parent" : 90
+			},
+			{
+				"file" : 34,
+				"parent" : 91
+			},
+			{
+				"command" : 11,
+				"file" : 34,
+				"line" : 62,
+				"parent" : 92
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 37,
+				"parent" : 94
+			},
+			{
+				"command" : 12,
+				"file" : 37,
+				"line" : 51,
+				"parent" : 95
+			},
+			{
+				"file" : 36,
+				"parent" : 96
+			},
+			{
+				"command" : 11,
+				"file" : 36,
+				"line" : 62,
+				"parent" : 97
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 39,
+				"parent" : 99
+			},
+			{
+				"command" : 12,
+				"file" : 39,
+				"line" : 51,
+				"parent" : 100
+			},
+			{
+				"file" : 38,
+				"parent" : 101
+			},
+			{
+				"command" : 11,
+				"file" : 38,
+				"line" : 62,
+				"parent" : 102
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 41,
+				"parent" : 104
+			},
+			{
+				"command" : 12,
+				"file" : 41,
+				"line" : 51,
+				"parent" : 105
+			},
+			{
+				"file" : 40,
+				"parent" : 106
+			},
+			{
+				"command" : 11,
+				"file" : 40,
+				"line" : 62,
+				"parent" : 107
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 43,
+				"parent" : 109
+			},
+			{
+				"command" : 12,
+				"file" : 43,
+				"line" : 51,
+				"parent" : 110
+			},
+			{
+				"file" : 42,
+				"parent" : 111
+			},
+			{
+				"command" : 11,
+				"file" : 42,
+				"line" : 62,
+				"parent" : 112
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 45,
+				"parent" : 114
+			},
+			{
+				"command" : 12,
+				"file" : 45,
+				"line" : 51,
+				"parent" : 115
+			},
+			{
+				"file" : 44,
+				"parent" : 116
+			},
+			{
+				"command" : 11,
+				"file" : 44,
+				"line" : 62,
+				"parent" : 117
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 47,
+				"parent" : 119
+			},
+			{
+				"command" : 12,
+				"file" : 47,
+				"line" : 51,
+				"parent" : 120
+			},
+			{
+				"file" : 46,
+				"parent" : 121
+			},
+			{
+				"command" : 11,
+				"file" : 46,
+				"line" : 62,
+				"parent" : 122
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 49,
+				"parent" : 124
+			},
+			{
+				"command" : 12,
+				"file" : 49,
+				"line" : 51,
+				"parent" : 125
+			},
+			{
+				"file" : 48,
+				"parent" : 126
+			},
+			{
+				"command" : 11,
+				"file" : 48,
+				"line" : 62,
+				"parent" : 127
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 51,
+				"parent" : 129
+			},
+			{
+				"command" : 12,
+				"file" : 51,
+				"line" : 51,
+				"parent" : 130
+			},
+			{
+				"file" : 50,
+				"parent" : 131
+			},
+			{
+				"command" : 11,
+				"file" : 50,
+				"line" : 62,
+				"parent" : 132
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 53,
+				"parent" : 134
+			},
+			{
+				"command" : 12,
+				"file" : 53,
+				"line" : 51,
+				"parent" : 135
+			},
+			{
+				"file" : 52,
+				"parent" : 136
+			},
+			{
+				"command" : 11,
+				"file" : 52,
+				"line" : 62,
+				"parent" : 137
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 55,
+				"parent" : 139
+			},
+			{
+				"command" : 12,
+				"file" : 55,
+				"line" : 51,
+				"parent" : 140
+			},
+			{
+				"file" : 54,
+				"parent" : 141
+			},
+			{
+				"command" : 11,
+				"file" : 54,
+				"line" : 62,
+				"parent" : 142
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 57,
+				"parent" : 144
+			},
+			{
+				"command" : 12,
+				"file" : 57,
+				"line" : 51,
+				"parent" : 145
+			},
+			{
+				"file" : 56,
+				"parent" : 146
+			},
+			{
+				"command" : 11,
+				"file" : 56,
+				"line" : 62,
+				"parent" : 147
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 59,
+				"parent" : 149
+			},
+			{
+				"command" : 12,
+				"file" : 59,
+				"line" : 51,
+				"parent" : 150
+			},
+			{
+				"file" : 58,
+				"parent" : 151
+			},
+			{
+				"command" : 11,
+				"file" : 58,
+				"line" : 62,
+				"parent" : 152
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 61,
+				"parent" : 154
+			},
+			{
+				"command" : 12,
+				"file" : 61,
+				"line" : 51,
+				"parent" : 155
+			},
+			{
+				"file" : 60,
+				"parent" : 156
+			},
+			{
+				"command" : 11,
+				"file" : 60,
+				"line" : 62,
+				"parent" : 157
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 63,
+				"parent" : 159
+			},
+			{
+				"command" : 12,
+				"file" : 63,
+				"line" : 51,
+				"parent" : 160
+			},
+			{
+				"file" : 62,
+				"parent" : 161
+			},
+			{
+				"command" : 11,
+				"file" : 62,
+				"line" : 62,
+				"parent" : 162
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 65,
+				"parent" : 164
+			},
+			{
+				"command" : 12,
+				"file" : 65,
+				"line" : 51,
+				"parent" : 165
+			},
+			{
+				"file" : 64,
+				"parent" : 166
+			},
+			{
+				"command" : 11,
+				"file" : 64,
+				"line" : 62,
+				"parent" : 167
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 439,
+				"parent" : 26
+			},
+			{
+				"file" : 67,
+				"parent" : 169
+			},
+			{
+				"command" : 12,
+				"file" : 67,
+				"line" : 51,
+				"parent" : 170
+			},
+			{
+				"file" : 66,
+				"parent" : 171
+			},
+			{
+				"command" : 11,
+				"file" : 66,
+				"line" : 61,
+				"parent" : 172
+			},
+			{
+				"command" : 12,
+				"file" : 16,
+				"line" : 40,
+				"parent" : 65
+			},
+			{
+				"file" : 15,
+				"parent" : 174
+			},
+			{
+				"command" : 15,
+				"file" : 15,
+				"line" : 39,
+				"parent" : 175
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 176
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 177
+			},
+			{
+				"file" : 69,
+				"parent" : 178
+			},
+			{
+				"command" : 12,
+				"file" : 69,
+				"line" : 52,
+				"parent" : 179
+			},
+			{
+				"file" : 68,
+				"parent" : 180
+			},
+			{
+				"command" : 11,
+				"file" : 68,
+				"line" : 61,
+				"parent" : 181
+			},
+			{
+				"command" : 12,
+				"file" : 25,
+				"line" : 18,
+				"parent" : 45
+			},
+			{
+				"file" : 75,
+				"parent" : 183
+			},
+			{
+				"command" : 12,
+				"file" : 75,
+				"line" : 48,
+				"parent" : 184
+			},
+			{
+				"file" : 74,
+				"parent" : 185
+			},
+			{
+				"command" : 15,
+				"file" : 74,
+				"line" : 15,
+				"parent" : 186
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 187
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 188
+			},
+			{
+				"file" : 73,
+				"parent" : 189
+			},
+			{
+				"command" : 12,
+				"file" : 73,
+				"line" : 40,
+				"parent" : 190
+			},
+			{
+				"file" : 72,
+				"parent" : 191
+			},
+			{
+				"command" : 15,
+				"file" : 72,
+				"line" : 39,
+				"parent" : 192
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 193
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 194
+			},
+			{
+				"file" : 71,
+				"parent" : 195
+			},
+			{
+				"command" : 12,
+				"file" : 71,
+				"line" : 52,
+				"parent" : 196
+			},
+			{
+				"file" : 70,
+				"parent" : 197
+			},
+			{
+				"command" : 11,
+				"file" : 70,
+				"line" : 61,
+				"parent" : 198
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 193
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 200
+			},
+			{
+				"file" : 79,
+				"parent" : 201
+			},
+			{
+				"command" : 12,
+				"file" : 79,
+				"line" : 40,
+				"parent" : 202
+			},
+			{
+				"file" : 78,
+				"parent" : 203
+			},
+			{
+				"command" : 15,
+				"file" : 78,
+				"line" : 39,
+				"parent" : 204
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 205
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 206
+			},
+			{
+				"file" : 77,
+				"parent" : 207
+			},
+			{
+				"command" : 12,
+				"file" : 77,
+				"line" : 52,
+				"parent" : 208
+			},
+			{
+				"file" : 76,
+				"parent" : 209
+			},
+			{
+				"command" : 11,
+				"file" : 76,
+				"line" : 61,
+				"parent" : 210
+			},
+			{
+				"command" : 12,
+				"file" : 71,
+				"line" : 40,
+				"parent" : 196
+			},
+			{
+				"file" : 82,
+				"parent" : 212
+			},
+			{
+				"command" : 15,
+				"file" : 82,
+				"line" : 39,
+				"parent" : 213
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 214
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 215
+			},
+			{
+				"file" : 81,
+				"parent" : 216
+			},
+			{
+				"command" : 12,
+				"file" : 81,
+				"line" : 52,
+				"parent" : 217
+			},
+			{
+				"file" : 80,
+				"parent" : 218
+			},
+			{
+				"command" : 11,
+				"file" : 80,
+				"line" : 61,
+				"parent" : 219
+			},
+			{
+				"command" : 12,
+				"file" : 61,
+				"line" : 48,
+				"parent" : 155
+			},
+			{
+				"file" : 85,
+				"parent" : 221
+			},
+			{
+				"command" : 15,
+				"file" : 85,
+				"line" : 15,
+				"parent" : 222
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 223
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 224
+			},
+			{
+				"file" : 84,
+				"parent" : 225
+			},
+			{
+				"command" : 12,
+				"file" : 84,
+				"line" : 52,
+				"parent" : 226
+			},
+			{
+				"file" : 83,
+				"parent" : 227
+			},
+			{
+				"command" : 11,
+				"file" : 83,
+				"line" : 61,
+				"parent" : 228
+			},
+			{
+				"command" : 12,
+				"file" : 63,
+				"line" : 48,
+				"parent" : 160
+			},
+			{
+				"file" : 88,
+				"parent" : 230
+			},
+			{
+				"command" : 15,
+				"file" : 88,
+				"line" : 15,
+				"parent" : 231
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 232
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 233
+			},
+			{
+				"file" : 87,
+				"parent" : 234
+			},
+			{
+				"command" : 12,
+				"file" : 87,
+				"line" : 52,
+				"parent" : 235
+			},
+			{
+				"file" : 86,
+				"parent" : 236
+			},
+			{
+				"command" : 11,
+				"file" : 86,
+				"line" : 61,
+				"parent" : 237
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 193
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 239
+			},
+			{
+				"file" : 92,
+				"parent" : 240
+			},
+			{
+				"command" : 12,
+				"file" : 92,
+				"line" : 40,
+				"parent" : 241
+			},
+			{
+				"file" : 91,
+				"parent" : 242
+			},
+			{
+				"command" : 15,
+				"file" : 91,
+				"line" : 39,
+				"parent" : 243
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 244
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 245
+			},
+			{
+				"file" : 90,
+				"parent" : 246
+			},
+			{
+				"command" : 12,
+				"file" : 90,
+				"line" : 52,
+				"parent" : 247
+			},
+			{
+				"file" : 89,
+				"parent" : 248
+			},
+			{
+				"command" : 11,
+				"file" : 89,
+				"line" : 61,
+				"parent" : 249
+			},
+			{
+				"command" : 12,
+				"file" : 14,
+				"line" : 52,
+				"parent" : 23
+			},
+			{
+				"file" : 93,
+				"parent" : 251
+			},
+			{
+				"command" : 11,
+				"file" : 93,
+				"line" : 61,
+				"parent" : 252
+			},
+			{
+				"command" : 18,
+				"file" : 1,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 94,
+				"line" : 670,
+				"parent" : 254
+			},
+			{
+				"command" : 10,
+				"file" : 94,
+				"line" : 388,
+				"parent" : 255
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 640,
+				"parent" : 8
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 640,
+				"parent" : 258
+			},
+			{
+				"command" : 10,
+				"file" : 94,
+				"line" : 2844,
+				"parent" : 259
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 662,
+				"parent" : 8
+			},
+			{
+				"command" : 10,
+				"file" : 12,
+				"line" : 407,
+				"parent" : 261
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 193
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 263
+			},
+			{
+				"file" : 96,
+				"parent" : 264
+			},
+			{
+				"command" : 12,
+				"file" : 96,
+				"line" : 55,
+				"parent" : 265
+			},
+			{
+				"file" : 95,
+				"parent" : 266
+			},
+			{
+				"command" : 11,
+				"file" : 95,
+				"line" : 61,
+				"parent" : 267
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 439,
+				"parent" : 26
+			},
+			{
+				"file" : 100,
+				"parent" : 269
+			},
+			{
+				"command" : 12,
+				"file" : 100,
+				"line" : 48,
+				"parent" : 270
+			},
+			{
+				"file" : 99,
+				"parent" : 271
+			},
+			{
+				"command" : 15,
+				"file" : 99,
+				"line" : 15,
+				"parent" : 272
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 273
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 274
+			},
+			{
+				"file" : 98,
+				"parent" : 275
+			},
+			{
+				"command" : 12,
+				"file" : 98,
+				"line" : 55,
+				"parent" : 276
+			},
+			{
+				"file" : 97,
+				"parent" : 277
+			},
+			{
+				"command" : 11,
+				"file" : 97,
+				"line" : 61,
+				"parent" : 278
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 439,
+				"parent" : 26
+			},
+			{
+				"file" : 104,
+				"parent" : 280
+			},
+			{
+				"command" : 12,
+				"file" : 104,
+				"line" : 48,
+				"parent" : 281
+			},
+			{
+				"file" : 103,
+				"parent" : 282
+			},
+			{
+				"command" : 23,
+				"file" : 103,
+				"line" : 5,
+				"parent" : 283
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 284
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 285
+			},
+			{
+				"file" : 102,
+				"parent" : 286
+			},
+			{
+				"command" : 22,
+				"file" : 102,
+				"line" : 3,
+				"parent" : 287
+			},
+			{
+				"command" : 10,
+				"file" : 101,
+				"line" : 73,
+				"parent" : 288
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 439,
+				"parent" : 26
+			},
+			{
+				"file" : 106,
+				"parent" : 290
+			},
+			{
+				"command" : 12,
+				"file" : 106,
+				"line" : 51,
+				"parent" : 291
+			},
+			{
+				"file" : 105,
+				"parent" : 292
+			},
+			{
+				"command" : 11,
+				"file" : 105,
+				"line" : 61,
+				"parent" : 293
+			},
+			{
+				"command" : 12,
+				"file" : 12,
+				"line" : 439,
+				"parent" : 26
+			},
+			{
+				"file" : 108,
+				"parent" : 295
+			},
+			{
+				"command" : 12,
+				"file" : 108,
+				"line" : 51,
+				"parent" : 296
+			},
+			{
+				"file" : 107,
+				"parent" : 297
+			},
+			{
+				"command" : 11,
+				"file" : 107,
+				"line" : 61,
+				"parent" : 298
+			},
+			{
+				"command" : 12,
+				"file" : 14,
+				"line" : 40,
+				"parent" : 23
+			},
+			{
+				"file" : 110,
+				"parent" : 300
+			},
+			{
+				"command" : 23,
+				"file" : 110,
+				"line" : 30,
+				"parent" : 301
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 302
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 303
+			},
+			{
+				"file" : 109,
+				"parent" : 304
+			},
+			{
+				"command" : 22,
+				"file" : 109,
+				"line" : 3,
+				"parent" : 305
+			},
+			{
+				"command" : 10,
+				"file" : 101,
+				"line" : 73,
+				"parent" : 306
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 302
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 308
+			},
+			{
+				"file" : 111,
+				"parent" : 309
+			},
+			{
+				"command" : 22,
+				"file" : 111,
+				"line" : 3,
+				"parent" : 310
+			},
+			{
+				"command" : 10,
+				"file" : 101,
+				"line" : 73,
+				"parent" : 311
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 302
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 313
+			},
+			{
+				"file" : 112,
+				"parent" : 314
+			},
+			{
+				"command" : 22,
+				"file" : 112,
+				"line" : 3,
+				"parent" : 315
+			},
+			{
+				"command" : 10,
+				"file" : 101,
+				"line" : 73,
+				"parent" : 316
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 20
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 318
+			},
+			{
+				"file" : 115,
+				"parent" : 319
+			},
+			{
+				"command" : 12,
+				"file" : 115,
+				"line" : 40,
+				"parent" : 320
+			},
+			{
+				"file" : 114,
+				"parent" : 321
+			},
+			{
+				"command" : 23,
+				"file" : 114,
+				"line" : 30,
+				"parent" : 322
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 323
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 324
+			},
+			{
+				"file" : 113,
+				"parent" : 325
+			},
+			{
+				"command" : 22,
+				"file" : 113,
+				"line" : 3,
+				"parent" : 326
+			},
+			{
+				"command" : 10,
+				"file" : 101,
+				"line" : 73,
+				"parent" : 327
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 323
+			},
+			{
+				"command" : 13,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 329
+			},
+			{
+				"file" : 116,
+				"parent" : 330
+			},
+			{
+				"command" : 22,
+				"file" : 116,
+				"line" : 3,
+				"parent" : 331
+			},
+			{
+				"command" : 10,
+				"file" : 101,
+				"line" : 73,
+				"parent" : 332
+			},
+			{
+				"command" : 12,
+				"file" : 17,
+				"line" : 37,
+				"parent" : 15
+			},
+			{
+				"file" : 117,
+				"parent" : 334
+			},
+			{
+				"command" : 11,
+				"file" : 117,
+				"line" : 61,
+				"parent" : 335
+			},
+			{
+				"command" : 25,
+				"file" : 94,
+				"line" : 611,
+				"parent" : 255
+			},
+			{
+				"command" : 24,
+				"file" : 94,
+				"line" : 2187,
+				"parent" : 337
+			},
+			{
+				"command" : 27,
+				"file" : 94,
+				"line" : 517,
+				"parent" : 255
+			},
+			{
+				"command" : 26,
+				"file" : 94,
+				"line" : 2515,
+				"parent" : 339
+			},
+			{
+				"command" : 26,
+				"file" : 94,
+				"line" : 2540,
+				"parent" : 339
+			},
+			{
+				"command" : 29,
+				"file" : 94,
+				"line" : 2322,
+				"parent" : 339
+			},
+			{
+				"command" : 28,
+				"file" : 0,
+				"line" : 1077,
+				"parent" : 342
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2506,
+				"parent" : 339
+			},
+			{
+				"command" : 32,
+				"file" : 94,
+				"line" : 561,
+				"parent" : 255
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 342,
+				"parent" : 345
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 1810,
+				"parent" : 346
+			},
+			{
+				"command" : 28,
+				"file" : 0,
+				"line" : 1574,
+				"parent" : 347
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 33,
+				"file" : 94,
+				"line" : 2080,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 979,
+				"parent" : 350
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 1987,
+				"parent" : 337
+			},
+			{
+				"command" : 28,
+				"file" : 94,
+				"line" : 2129,
+				"parent" : 337
+			},
+			{
+				"command" : 32,
+				"file" : 94,
+				"line" : 2205,
+				"parent" : 337
+			},
+			{
+				"command" : 31,
+				"file" : 0,
+				"line" : 342,
+				"parent" : 369
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 1810,
+				"parent" : 370
+			},
+			{
+				"command" : 28,
+				"file" : 0,
+				"line" : 1574,
+				"parent" : 371
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 13,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 257,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 256,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 257,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 256,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 257,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 256,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 257,
+					"define" : "QT_QUICK_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_autogen/include"
+				},
+				{
+					"backtrace" : 340,
+					"path" : "/home/jyeany/QtProjects/word-guess-game"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtQml/6.4.2"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtQml/6.4.2/QtQml"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtCore/6.4.2"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtCore/6.4.2/QtCore"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtCore"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/mkspecs/wasm-emscripten"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtQml"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 341,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtNetwork"
+				},
+				{
+					"backtrace" : 257,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtQuick"
+				},
+				{
+					"backtrace" : 257,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtGui"
+				},
+				{
+					"backtrace" : 257,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 257,
+					"isSystem" : true,
+					"path" : "/home/jyeany/Qt/6.4.2/wasm_32/include/QtOpenGL"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					13
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				15,
+				17,
+				18,
+				20,
+				21,
+				23,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				41
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 338,
+			"id" : "appword-guess-game_tooling::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "appword-guess-game_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "appword-guess-game_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "appword-guess-game::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/jyeany/Development/Emscripten/emsdk/upstream/emscripten/cache/sysroot"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "INITIAL_MEMORY=50MB",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "EXPORTED_RUNTIME_METHODS=UTF16ToString,stringToUTF16",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "ERROR_ON_UNDEFINED_SYMBOLS=1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "MAX_WEBGL_VERSION=2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "FETCH=1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "WASM_BIGINT=1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "MODULARIZE=1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "EXPORT_NAME=createQtAppInstance",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "DISABLE_EXCEPTION_CATCHING=1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-s",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "ALLOW_MEMORY_GROWTH=1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-sASYNCIFY_IMPORTS=qt_asyncify_suspend_js,qt_asyncify_resume_js",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/objects-Release/Qml_resources_1/.rcc/qrc_qmake_QtQml.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/objects-Release/Quick_resources_1/.rcc/qrc_qmake_QtQuick.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/Quick_resources_2/.rcc/qrc_scenegraph_shaders.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/objects-Release/qtquick2plugin_init/qtquick2plugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/objects-Release/qmlplugin_init/qmlplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 83,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/Models/objects-Release/modelsplugin_init/modelsplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 88,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/objects-Release/qtquickcontrols2plugin_init/qtquickcontrols2plugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 93,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/impl/objects-Release/qtquickcontrols2implplugin_init/qtquickcontrols2implplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/objects-Release/qtquickcontrols2fusionstyleplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Fusion.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/objects-Release/qtquickcontrols2fusionstyleplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2fusionstyleplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/objects-Release/qtquickcontrols2fusionstyleplugin_resources_2/.rcc/qrc_qtquickcontrols2fusionstyleplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/objects-Release/qtquickcontrols2fusionstyleplugin_init/qtquickcontrols2fusionstyleplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 98,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/qtquickcontrols2fusionstyleplugin_resources_3/.rcc/qrc_qtquickcontrols2fusionstyle.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/objects-Release/qtquickcontrols2materialstyleplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Material.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/objects-Release/qtquickcontrols2materialstyleplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2materialstyleplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/objects-Release/qtquickcontrols2materialstyleplugin_resources_2/.rcc/qrc_qtquickcontrols2materialstyleplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/objects-Release/qtquickcontrols2materialstyleplugin_init/qtquickcontrols2materialstyleplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/qtquickcontrols2materialstyleplugin_resources_3/.rcc/qrc_qtquickcontrols2materialstyleplugin.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 108,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/objects-Release/qtquickcontrols2imaginestyleplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Imagine.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 108,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/objects-Release/qtquickcontrols2imaginestyleplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2imaginestyleplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 108,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/objects-Release/qtquickcontrols2imaginestyleplugin_resources_2/.rcc/qrc_qtquickcontrols2imaginestyleplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 108,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/objects-Release/qtquickcontrols2imaginestyleplugin_init/qtquickcontrols2imaginestyleplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 108,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/qtquickcontrols2imaginestyleplugin_resources_3/.rcc/qrc_qmake_qtquickcontrols2imaginestyleplugin.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 113,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/objects-Release/qtquickcontrols2universalstyleplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Universal.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 113,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/objects-Release/qtquickcontrols2universalstyleplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2universalstyleplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 113,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/objects-Release/qtquickcontrols2universalstyleplugin_resources_2/.rcc/qrc_qtquickcontrols2universalstyleplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 113,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/objects-Release/qtquickcontrols2universalstyleplugin_init/qtquickcontrols2universalstyleplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 113,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/qtquickcontrols2universalstyleplugin_resources_3/.rcc/qrc_qtquickcontrols2universalstyleplugin.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 118,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/objects-Release/qtquickcontrols2basicstyleplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Basic.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 118,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/objects-Release/qtquickcontrols2basicstyleplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2basicstyleplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 118,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/objects-Release/qtquickcontrols2basicstyleplugin_resources_2/.rcc/qrc_qtquickcontrols2basicstyleplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 118,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/objects-Release/qtquickcontrols2basicstyleplugin_init/qtquickcontrols2basicstyleplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 118,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/qtquickcontrols2basicstyleplugin_resources_3/.rcc/qrc_qtquickcontrols2basicstyleplugin.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 123,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Templates/objects-Release/qtquicktemplates2plugin_init/qtquicktemplates2plugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 128,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/impl/objects-Release/qtquickcontrols2fusionstyleimplplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Fusion_impl.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 128,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/impl/objects-Release/qtquickcontrols2fusionstyleimplplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2fusionstyleimplplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 128,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/impl/objects-Release/qtquickcontrols2fusionstyleimplplugin_resources_2/.rcc/qrc_qtquickcontrols2fusionstyleimplplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 128,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/impl/objects-Release/qtquickcontrols2fusionstyleimplplugin_init/qtquickcontrols2fusionstyleimplplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Window/objects-Release/quickwindow_resources_1/.rcc/qrc_qmake_QtQuick_Window.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Window/objects-Release/quickwindow_init/quickwindow_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 138,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/impl/objects-Release/qtquickcontrols2materialstyleimplplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Material_impl.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 138,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/impl/objects-Release/qtquickcontrols2materialstyleimplplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2materialstyleimplplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 138,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/impl/objects-Release/qtquickcontrols2materialstyleimplplugin_resources_2/.rcc/qrc_qtquickcontrols2materialstyleimplplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 138,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/impl/objects-Release/qtquickcontrols2materialstyleimplplugin_init/qtquickcontrols2materialstyleimplplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/impl/objects-Release/qtquickcontrols2imaginestyleimplplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Imagine_impl.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/impl/objects-Release/qtquickcontrols2imaginestyleimplplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2imaginestyleimplplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/impl/objects-Release/qtquickcontrols2imaginestyleimplplugin_resources_2/.rcc/qrc_qtquickcontrols2imaginestyleimplplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/impl/objects-Release/qtquickcontrols2imaginestyleimplplugin_init/qtquickcontrols2imaginestyleimplplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/qtquickcontrols2imaginestyleimplplugin_resources_3/.rcc/qrc_qmake_qtquickcontrols2imaginestyleimplplugin.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 148,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/impl/objects-Release/qtquickcontrols2universalstyleimplplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Universal_impl.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 148,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/impl/objects-Release/qtquickcontrols2universalstyleimplplugin_qmlcache/.rcc/qmlcache/qtquickcontrols2universalstyleimplplugin_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 148,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/impl/objects-Release/qtquickcontrols2universalstyleimplplugin_resources_2/.rcc/qrc_qtquickcontrols2universalstyleimplplugin_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 148,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/impl/objects-Release/qtquickcontrols2universalstyleimplplugin_init/qtquickcontrols2universalstyleimplplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 153,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/impl/objects-Release/qtquickcontrols2basicstyleimplplugin_resources_1/.rcc/qrc_qmake_QtQuick_Controls_Basic_impl.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 153,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/impl/objects-Release/qtquickcontrols2basicstyleimplplugin_init/qtquickcontrols2basicstyleimplplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 158,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Shapes/objects-Release/qmlshapesplugin_init/qmlshapesplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 163,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Layouts/objects-Release/qquicklayoutsplugin_init/qquicklayoutsplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtTest/objects-Release/QuickTestplugin_init/QuickTestplugin_init.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 173,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/QWasmIntegrationPlugin_resources_1/.rcc/qrc_wasmfonts.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 182,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/Models/objects-Release/QmlModels_resources_1/.rcc/qrc_qmake_QtQml_Models.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 199,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/objects-Release/QuickControls2_resources_1/.rcc/qrc_qmake_QtQuick_Controls.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 211,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/impl/objects-Release/QuickControls2Impl_resources_1/.rcc/qrc_qmake_QtQuick_Controls_impl.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 220,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Templates/objects-Release/QuickTemplates2_resources_1/.rcc/qrc_qmake_QtQuick_Templates.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 229,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Shapes/objects-Release/QuickShapesPrivate_resources_1/.rcc/qrc_qmake_QtQuick_Shapes.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 229,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/QuickShapesPrivate_resources_2/.rcc/qrc_qtquickshapes.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 238,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Layouts/objects-Release/QuickLayouts_resources_1/.rcc/qrc_qmake_QtQuick_Layouts.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 250,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtTest/objects-Release/QuickTest_resources_1/.rcc/qrc_qmake_QtTest.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 250,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtTest/objects-Release/QuickTest_qmlcache/.rcc/qmlcache/QuickTest_qmlcache_loader.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 250,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtTest/objects-Release/QuickTest_resources_2/.rcc/qrc_QuickTest_raw_qml_0.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 253,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/Gui_resources_1/.rcc/qrc_qpdf.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 253,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/objects-Release/Gui_resources_2/.rcc/qrc_gui_shaders.cpp.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 256,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Qml.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 257,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Quick.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/libqtquick2plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/libqmlplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/Models/libmodelsplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/libqtquickcontrols2plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/impl/libqtquickcontrols2implplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/libqtquickcontrols2fusionstyleplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/libqtquickcontrols2materialstyleplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/libqtquickcontrols2imaginestyleplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/libqtquickcontrols2universalstyleplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/libqtquickcontrols2basicstyleplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Templates/libqtquicktemplates2plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Fusion/impl/libqtquickcontrols2fusionstyleimplplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Window/libquickwindowplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Material/impl/libqtquickcontrols2materialstyleimplplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Imagine/impl/libqtquickcontrols2imaginestyleimplplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Universal/impl/libqtquickcontrols2universalstyleimplplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/Basic/impl/libqtquickcontrols2basicstyleimplplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Shapes/libqmlshapesplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Layouts/libqquicklayoutsplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtTest/libquicktestplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/tls/libqcertonlybackend.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqgif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqicns.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqico.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqjpeg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/iconengines/libqsvgicon.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqsvg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqtga.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqtiff.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/platforms/libqwasm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqwbmp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 262,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./plugins/imageformats/libqwebp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/libqtquickcontrols2plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Controls/impl/libqtquickcontrols2implplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/Templates/libqtquicktemplates2plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 93,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QuickControls2Impl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 88,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QuickControls2.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 123,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QuickTemplates2.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 158,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QuickShapes.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 163,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QuickLayouts.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQuick/libqtquick2plugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/Models/libmodelsplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 260,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/./qml/QtQml/libqmlplugin.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QuickTest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 257,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Quick.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6QmlModels.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 268,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Test.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 256,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Qml.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 279,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Network.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 289,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6BundledLibjpeg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 294,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Svg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 173,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6OpenGL.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 299,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Gui.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 307,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6BundledHarfbuzz.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 312,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6BundledFreetype.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 317,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6BundledLibpng.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 328,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6BundledZLIB.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 333,
+				"fragment" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/libQt6BundledPcre2.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 336,
+				"fragment" : "-lembind",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "appword-guess-game",
+	"nameOnDisk" : "appword-guess-game.js",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				15,
+				17,
+				18,
+				20,
+				21,
+				23,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				41
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				7,
+				9,
+				11,
+				13,
+				14,
+				16
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				19,
+				22,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				42,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/gamemanager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/gamemanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/gamestate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/gamestate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/gamestatecreator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/gamestatecreator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/dicts/shortwords.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/dicts/shortwords.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/dicts/mediumwords.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/dicts/mediumwords.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/dicts/longwords.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/dicts/longwords.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/dicts/iwordprovider.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/dicts/wordproviderfactory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/dicts/wordproviderfactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/dicts/dictutils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/dicts/dictutils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 343,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/meta_types/qt6appword-guess-game_release_metatypes.json.gen",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 344,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 348,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qrc_qmake_word-guess-game.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 349,
+			"path" : "src/main.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 351,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 352,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/main_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 353,
+			"path" : "src/components/WordDisplay.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 354,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/WordDisplay_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 355,
+			"path" : "src/components/WordGuess.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 356,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/WordGuess_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 357,
+			"path" : "src/components/LetterGuess.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 358,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/LetterGuess_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 359,
+			"path" : "src/components/GameEnd.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 360,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/GameEnd_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 361,
+			"path" : "src/components/GreetingView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 362,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/GreetingView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 363,
+			"path" : "src/components/MissedLetters.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 364,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/MissedLetters_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 365,
+			"path" : "src/components/MissedWords.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 366,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/MissedWords_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 367,
+			"path" : "src/components/buttons/ColorButton.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 368,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/buttons/ColorButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 372,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qrc_appword-guess-game_raw_qml_0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/meta_types/qt6appword-guess-game_release_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qrc_qmake_word-guess-game.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/main_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/WordDisplay_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/WordGuess_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/LetterGuess_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/GameEnd_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/GreetingView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/MissedLetters_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/MissedWords_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qmlcache/appword-guess-game_src/components/buttons/ColorButton_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/.rcc/qrc_appword-guess-game_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/meta_types/appword-guess-game_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 13,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6core_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 256,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6qml_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 256,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6network_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 257,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6quick_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 257,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6gui_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 257,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6qmlmodels_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 257,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/lib/metatypes/qt6opengl_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/tls/objects-Release/QTlsBackendCertOnlyPlugin_init/QTlsBackendCertOnlyPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QGifPlugin_init/QGifPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QICNSPlugin_init/QICNSPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QICOPlugin_init/QICOPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QJpegPlugin_init/QJpegPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/iconengines/objects-Release/QSvgIconPlugin_init/QSvgIconPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QSvgPlugin_init/QSvgPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QTgaPlugin_init/QTgaPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QTiffPlugin_init/QTiffPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/platforms/objects-Release/QWasmIntegrationPlugin_init/QWasmIntegrationPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QWbmpPlugin_init/QWbmpPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 262,
+			"isGenerated" : true,
+			"path" : "/home/jyeany/Qt/6.4.2/wasm_32/plugins/imageformats/objects-Release/QWebpPlugin_init/QWebpPlugin_init.cpp.o",
+			"sourceGroupIndex" : 4
+		}
+	],
+	"type" : "EXECUTABLE"
+}

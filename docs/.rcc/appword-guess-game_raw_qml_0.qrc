@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/word-guess-game/">
+    <file alias="src/main.qml">/home/jyeany/QtProjects/word-guess-game/src/main.qml</file>
+    <file alias="src/components/WordDisplay.qml">/home/jyeany/QtProjects/word-guess-game/src/components/WordDisplay.qml</file>
+    <file alias="src/components/WordGuess.qml">/home/jyeany/QtProjects/word-guess-game/src/components/WordGuess.qml</file>
+    <file alias="src/components/LetterGuess.qml">/home/jyeany/QtProjects/word-guess-game/src/components/LetterGuess.qml</file>
+    <file alias="src/components/GameEnd.qml">/home/jyeany/QtProjects/word-guess-game/src/components/GameEnd.qml</file>
+    <file alias="src/components/GreetingView.qml">/home/jyeany/QtProjects/word-guess-game/src/components/GreetingView.qml</file>
+    <file alias="src/components/MissedLetters.qml">/home/jyeany/QtProjects/word-guess-game/src/components/MissedLetters.qml</file>
+    <file alias="src/components/MissedWords.qml">/home/jyeany/QtProjects/word-guess-game/src/components/MissedWords.qml</file>
+    <file alias="src/components/buttons/ColorButton.qml">/home/jyeany/QtProjects/word-guess-game/src/components/buttons/ColorButton.qml</file>
+  </qresource>
+</RCC>
+

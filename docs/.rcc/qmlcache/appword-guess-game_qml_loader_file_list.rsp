@@ -1,0 +1,9 @@
+/word-guess-game/src/main.qml
+/word-guess-game/src/components/WordDisplay.qml
+/word-guess-game/src/components/WordGuess.qml
+/word-guess-game/src/components/LetterGuess.qml
+/word-guess-game/src/components/GameEnd.qml
+/word-guess-game/src/components/GreetingView.qml
+/word-guess-game/src/components/MissedLetters.qml
+/word-guess-game/src/components/MissedWords.qml
+/word-guess-game/src/components/buttons/ColorButton.qml

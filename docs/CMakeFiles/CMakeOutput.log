@@ -1,0 +1,90 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 6.0.12-76060006-generic - x86_64
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/jyeany/Qt/Tools/Ninja/ninja cmTC_38d29 && [1/2] Building CXX object CMakeFiles/cmTC_38d29.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_38d29.js
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+Performing C++ SOURCE FILE Test HAVE_GETTIME succeeded with the following output:
+Change Dir: /home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/jyeany/Qt/Tools/Ninja/ninja cmTC_e1ff2 && [1/2] Building CXX object CMakeFiles/cmTC_e1ff2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e1ff2.js
+
+
+Source file was:
+
+#include <unistd.h>
+#include <time.h>
+
+int main(int, char **) {
+    timespec ts; clock_gettime(CLOCK_REALTIME, &ts);
+}
+Performing C++ SOURCE FILE Test HAVE_EGL succeeded with the following output:
+Change Dir: /home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/jyeany/Qt/Tools/Ninja/ninja cmTC_ecbc2 && [1/2] Building CXX object CMakeFiles/cmTC_ecbc2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_ecbc2.js
+
+
+Source file was:
+
+#include <EGL/egl.h>
+
+int main(int, char **) {
+    EGLint x = 0; EGLDisplay dpy = 0; EGLContext ctx = 0;
+    eglDestroyContext(dpy, ctx);
+}
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/jyeany/Qt/Tools/Ninja/ninja cmTC_edcfa && [1/2] Building CXX object CMakeFiles/cmTC_edcfa.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_edcfa.js
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

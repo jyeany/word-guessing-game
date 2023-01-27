@@ -1,0 +1,1 @@
+/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/appword-guess-game_autogen/include/../UVLADIE3JM/moc_gamemanager.cpp.json

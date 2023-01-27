@@ -1,0 +1,244 @@
+{
+	"BUILD_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/WordGuessUnitTests_autogen",
+	"CMAKE_BINARY_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/jyeany/QtProjects/word-guess-game/test/cpp-unit-tests",
+	"CMAKE_EXECUTABLE" : "/home/jyeany/Qt/Tools/CMake/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/jyeany/QtProjects/word-guess-game/test/cpp-unit-tests/CMakeLists.txt",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/FindThreads.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CheckLibraryExists.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Config.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFeature.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/home/jyeany/Qt/6.4.2/gcc_64/lib/cmake/Qt6HostInfo/Qt6HostInfoConfig.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/jyeany/QtProjects/word-guess-game",
+	"DEP_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/WordGuessUnitTests_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "WordGuessUnitTests_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/dictutils.h",
+			"Mu",
+			"SFGMNSLIKB/moc_dictutils.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/iwordprovider.h",
+			"Mu",
+			"SFGMNSLIKB/moc_iwordprovider.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/longwords.h",
+			"Mu",
+			"SFGMNSLIKB/moc_longwords.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/mediumwords.h",
+			"Mu",
+			"SFGMNSLIKB/moc_mediumwords.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/shortwords.h",
+			"Mu",
+			"SFGMNSLIKB/moc_shortwords.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/wordproviderfactory.h",
+			"Mu",
+			"SFGMNSLIKB/moc_wordproviderfactory.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/gamemanager.h",
+			"Mu",
+			"VNU7RW3YIC/moc_gamemanager.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/gamestate.h",
+			"Mu",
+			"VNU7RW3YIC/moc_gamestate.cpp",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/gamestatecreator.h",
+			"Mu",
+			"VNU7RW3YIC/moc_gamestatecreator.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/WordGuessUnitTests_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/WordGuessUnitTests_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"GTEST_LANGUAGE_CXX14",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QMLMODELS_LIB",
+		"QT_QML_LIB",
+		"QT_QUICK_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/jyeany/Development/googletest/googletest",
+		"/home/jyeany/Development/googletest/googletest/include",
+		"/home/jyeany/Development/googletest/googlemock",
+		"/home/jyeany/Development/googletest/googlemock/include",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQuick",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtCore",
+		"/home/jyeany/Qt/6.4.2/wasm_32/mkspecs/wasm-emscripten",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtGui",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQml",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQmlIntegration",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtNetwork",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQmlModels",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtOpenGL",
+		"/home/jyeany/Development/Emscripten/emsdk/upstream/emscripten/cache/sysroot/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/home/jyeany/Development/Emscripten/emsdk/upstream/emscripten/em++",
+		"-dM",
+		"-E",
+		"-c",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/WordGuessUnitTests_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/CMakeFiles/WordGuessUnitTests_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/jyeany/Qt/6.4.2/gcc_64/./libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 4,
+	"SETTINGS_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/cpp-unit-tests/CMakeFiles/WordGuessUnitTests_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/jyeany/Development/googletest/googlemock/src/gmock-all.cc",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/Development/googletest/googletest/src/gtest-all.cc",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/dictutils.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/longwords.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/mediumwords.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/shortwords.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/dicts/wordproviderfactory.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/gamemanager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/gamestate.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/src/gamestatecreator.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/cpp-unit-tests/dicts/tst_dict_utils.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/cpp-unit-tests/dicts/tst_word_provider_factory.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/cpp-unit-tests/main.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/cpp-unit-tests/tst_game_manager_case.cpp",
+			"Mu",
+			null
+		]
+	],
+	"VERBOSITY" : 0
+}

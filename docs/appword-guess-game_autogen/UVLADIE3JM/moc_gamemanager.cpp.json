@@ -1,0 +1,130 @@
+{
+    "classes": [
+        {
+            "className": "GameManager",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "wordLength",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "createGame",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "letter",
+                            "type": "QChar"
+                        }
+                    ],
+                    "name": "makeLetterGuess",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "guess",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "makeWordGuess",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "endGameMessage",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "resetGame",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "letter",
+                            "type": "QChar"
+                        }
+                    ],
+                    "name": "hasFoundLetter",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "currentLetterIndices",
+                    "returnType": "QList<int>"
+                },
+                {
+                    "access": "public",
+                    "name": "getSolutionWord",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "getSolutionLetters",
+                    "returnType": "QList<QChar>"
+                },
+                {
+                    "access": "public",
+                    "name": "getMissedLetters",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "getMissedWords",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "getWordGuesses",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "name": "getLetterGuesses",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "name": "getGuessedLetters",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "getGameModeStr",
+                    "returnType": "QString"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "GameManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "letterGuessesUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "wordGuessesUpdated",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gamemanager.h",
+    "outputRevision": 68
+}

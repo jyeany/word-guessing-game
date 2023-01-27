@@ -1,0 +1,151 @@
+{
+	"BUILD_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/WordGuessQmlCase_autogen",
+	"CMAKE_BINARY_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests",
+	"CMAKE_EXECUTABLE" : "/home/jyeany/Qt/Tools/CMake/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests/CMakeLists.txt",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Config.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFeature.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/home/jyeany/Qt/6.4.2/gcc_64/lib/cmake/Qt6HostInfo/Qt6HostInfoConfig.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Config.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFeature.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/jyeany/Qt/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/home/jyeany/Qt/6.4.2/gcc_64/lib/cmake/Qt6HostInfo/Qt6HostInfoConfig.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/jyeany/QtProjects/word-guess-game",
+	"DEP_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/WordGuessQmlCase_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "WordGuessQmlCase_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests/setup.h",
+			"MU",
+			"EWIEGA46WW/moc_setup.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/WordGuessQmlCase_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/WordGuessQmlCase_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QMLTEST_LIB",
+		"QT_QML_LIB",
+		"QT_TESTCASE_BUILDDIR=\"/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests\"",
+		"QT_TESTCASE_SOURCEDIR=\"/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests\"",
+		"QT_TESTLIB_LIB",
+		"QUICK_TEST_SOURCE_DIR=\"/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests\""
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQuickTest",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtCore",
+		"/home/jyeany/Qt/6.4.2/wasm_32/mkspecs/wasm-emscripten",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtTest",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQml",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtQmlIntegration",
+		"/home/jyeany/Qt/6.4.2/wasm_32/include/QtNetwork",
+		"/home/jyeany/Development/Emscripten/emsdk/upstream/emscripten/cache/sysroot/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/home/jyeany/Development/Emscripten/emsdk/upstream/emscripten/em++",
+		"-dM",
+		"-E",
+		"-c",
+		"/home/jyeany/Qt/Tools/CMake/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/WordGuessQmlCase_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/CMakeFiles/WordGuessQmlCase_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/jyeany/Qt/6.4.2/gcc_64/./libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/home/jyeany/Qt/6.4.2/gcc_64/./libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 4,
+	"SETTINGS_FILE" : "/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/test/qml-unit-tests/CMakeFiles/WordGuessQmlCase_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jyeany/QtProjects/word-guess-game/test/qml-unit-tests/setup.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

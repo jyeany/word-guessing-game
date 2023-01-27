@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/word-guess-game">
+    <file alias="qmldir">/home/jyeany/QtProjects/build-word-guess-game-WebAssembly_Qt_6_4_2-Release/word-guess-game/qmldir</file>
+  </qresource>
+</RCC>
+
